@@ -86,6 +86,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\PurchaseYG.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\LanguageExample.cs" />
+    <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\YandexGame\WorkingData\SavesYG.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\RewardedAd.cs" />
