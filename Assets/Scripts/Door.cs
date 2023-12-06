@@ -1,18 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Door : MonoBehaviour
 {
 
     private Transform _doorTransform;
+    private NavMeshObstacle _obstacle;
     [SerializeField] private float _angle;
     [SerializeField] private float _startAngle;
 
-    // Start is called before the first frame update
+    private void Awake()
+    {
+        _obstacle = GetComponent<NavMeshObstacle>();
+    }
     void Start()
     {
         _doorTransform = gameObject.transform.GetChild(0);
+        _obstacle.enabled = true;
     }
 
     // Update is called once per frame
@@ -25,7 +31,7 @@ public class Door : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            _doorTransform.rotation = Quaternion.Euler(transform.localRotation.x, _angle, transform.localRotation.z);
+            DoorOpen();
         }
     }
 
@@ -33,7 +39,19 @@ public class Door : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            _doorTransform.rotation = Quaternion.Euler(transform.localRotation.x, _startAngle, transform.localRotation.z);
+            DoorClose();
         }
+    }
+
+    void DoorOpen()
+    {
+        _doorTransform.rotation = Quaternion.Euler(transform.localRotation.x, _angle, transform.localRotation.z);
+        _obstacle.enabled = false;
+    }
+
+    void DoorClose()
+    {
+        _doorTransform.rotation = Quaternion.Euler(transform.localRotation.x, _startAngle, transform.localRotation.z);
+        _obstacle.enabled = true;
     }
 }

@@ -14,6 +14,8 @@ public class GunPlayer : MonoBehaviour
 
     [SerializeField] private float _offset;
 
+    [SerializeField] private ObjectPoolController _poolController;
+
     private Animator _anim;
     private void Awake()
     {
@@ -62,7 +64,18 @@ public class GunPlayer : MonoBehaviour
     private IEnumerator SpawnBullet()
     {
         yield return new WaitForSeconds(0.1f);
-        Instantiate(_bulletPrefab, _bulletPos.position,
-            _bulletPos.rotation).GetComponent<Rigidbody>().AddForce(_bulletPos.forward * _speedBullet);
+
+        GameObject bullet = _poolController.GetObjectFromPool();
+        if (bullet != null)
+        {
+            BulletController bulletController = bullet.GetComponent<BulletController>();
+            if (bulletController != null)
+            {
+                bulletController.Initialize(_poolController, _bulletPos.forward);
+            }
+            bullet.transform.position = _bulletPos.position;
+            bullet.transform.rotation = _bulletPos.rotation;
+            bullet.SetActive(true);
+        }
     }
 }

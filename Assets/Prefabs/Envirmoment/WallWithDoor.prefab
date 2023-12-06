@@ -1419,6 +1419,7 @@ GameObject:
   - component: {fileID: 6918532145420348385}
   - component: {fileID: 6909362847864841473}
   - component: {fileID: 903858634355644356}
+  - component: {fileID: 7453433572667251745}
   m_Layer: 0
   m_Name: WallWithDoor
   m_TagString: Untagged
@@ -1460,6 +1461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _angle: -100
+  _startAngle: 0
 --- !u!65 &903858634355644356
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1479,8 +1481,24 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.9613397, y: 2.6423147, z: 1.670824}
-  m_Center: {x: -0.2784027, y: 0.8211576, z: -0.040915966}
+  m_Size: {x: 3.1477182, y: 2.6423147, z: 2.4392533}
+  m_Center: {x: -0.47026145, y: 0.8211576, z: -0.019315481}
+--- !u!208 &7453433572667251745
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3143870085793869933}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &6075739736781230089
 GameObject:
   m_ObjectHideFlags: 0

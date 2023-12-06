@@ -346,6 +346,7 @@
 -analyzer:"D:/Vladimir/Unity2022/Unity 2022.3.5f1/2022.3.5f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Damian Gonzalez/dg_simpleCamFollow/Scripts/dg_simpleCamFollow.cs"
 "Assets/QuickOutline/Scripts/Outline.cs"
+"Assets/Scripts/Bullet/ObjectPoolController.cs"
 "Assets/Scripts/BulletController.cs"
 "Assets/Scripts/ContainerHostage.cs"
 "Assets/Scripts/ContainerPositions.cs"

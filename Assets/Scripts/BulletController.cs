@@ -1,11 +1,26 @@
-
+using System.Collections;
 using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
+    private ObjectPoolController _poolController;
+    private Rigidbody _rb;
     private float _startPosoitionY;
+    private Vector3 _position;
+
 
     [SerializeField] private int _damage;
+    [SerializeField] private float _speedMove;
+    public void Initialize(ObjectPoolController objectPoolController, Vector3 v)
+    {
+        _poolController = objectPoolController;
+        _position = v;
+    }
+    private void Awake()
+    {
+        _rb = GetComponent<Rigidbody>();
+    }
+
     void Start()
     {
         _startPosoitionY = transform.position.y;
@@ -13,9 +28,11 @@ public class BulletController : MonoBehaviour
 
     void Update()
     {
+        StartCoroutine(ReturnBulletToPool(this.gameObject));
         transform.position = new Vector3(transform.position.x, _startPosoitionY, transform.position.z);
-        Destroy(gameObject, 5f);
+        _rb.velocity = _position * _speedMove;
     }
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,11 +40,17 @@ public class BulletController : MonoBehaviour
             || other.gameObject.CompareTag("Player"))
         {
             other.GetComponent<IDamagable>().TakeDamage(_damage);
-            Destroy(this.gameObject);
+            _poolController.ReturnObjectToPool(this.gameObject);
         }
         if (other.gameObject.CompareTag("Obstacle"))
         {
-            Destroy(this.gameObject);
+            _poolController.ReturnObjectToPool(this.gameObject);
         }
+    }
+
+    private IEnumerator ReturnBulletToPool(GameObject bullet)
+    {
+        yield return new WaitForSeconds(5);
+        _poolController.ReturnObjectToPool(bullet);
     }
 }

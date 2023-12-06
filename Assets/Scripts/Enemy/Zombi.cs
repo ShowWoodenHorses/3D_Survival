@@ -32,22 +32,20 @@ public class Zombi : EnemyController
 
     public void Update()
     {
-        if (Vector3.Distance(transform.position, _playerPos.position) <= _radiusDetected
-            && Vector3.Distance(transform.position, _playerPos.position) >= _radiusAttack 
+        float distanceToPlayer = Vector3.Distance(transform.position, _playerPos.position);
+        if (distanceToPlayer <= _radiusDetected && distanceToPlayer >= _radiusAttack 
                 && _agent.isStopped == false)
         {
             _anim.SetBool("Walk", false);
             _anim.SetFloat("speed", _agent.velocity.magnitude);
             Move();
         }
-        else if (Vector3.Distance(transform.position, _playerPos.position) > _radiusDetected 
-            && _agent.isStopped == false)
+        else if (distanceToPlayer > _radiusDetected && _agent.isStopped == false)
         {
             _anim.SetBool("Walk", true);
             Patrul();
         }
-        else if (Vector3.Distance(transform.position, _playerPos.position) < _radiusAttack
-            && _agent.isStopped == false)
+        else if (distanceToPlayer < _radiusAttack && _agent.isStopped == false)
         {
             Attack();
             _anim.SetTrigger("Attack");

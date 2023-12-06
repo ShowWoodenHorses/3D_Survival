@@ -93,6 +93,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\ActivityOnAuthorizationYG.cs" />
     <Compile Include="Assets\Scripts\ForTexture\AutoTiling.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language Translation\UtilsLang.cs" />
+    <Compile Include="Assets\Scripts\Bullet\ObjectPoolController.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ImageLoadYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\YandexGame.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Inside\ConfigYG.cs" />

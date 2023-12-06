@@ -8,6 +8,8 @@ public class ManGun : EnemyController
     [SerializeField] private Transform _bulletPos;
     [SerializeField] private GameObject _bulletPrefab;
 
+    [SerializeField] private float _sphereRadius;
+
     private float _startSpeed;
 
     [SerializeField] private LayerMask _layerMask;
@@ -24,17 +26,18 @@ public class ManGun : EnemyController
     public void FixedUpdate()
     {
         _anim.SetFloat("speed", _agent.velocity.magnitude);
-        if (Vector3.Distance(transform.position, _playerPos.position) <= _radiusDetected
-            && Vector3.Distance(transform.position, _playerPos.position) >= _radiusAttack
-                && _agent.isStopped == false)
+        float distanceToPlayer = Vector3.Distance(transform.position, _playerPos.position);
+        bool isRange = distanceToPlayer <= _radiusDetected && distanceToPlayer >= _radiusAttack;
+        bool hit = Physics.SphereCast(transform.position, _sphereRadius, 
+            transform.TransformDirection(Vector3.forward),
+            out RaycastHit hitinfo, _radiusAttack, _layerMask);
+
+        if (isRange && !_agent.isStopped)
         {
             Move();
             _anim.SetBool("isAttack", false);
         }
-        else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward),
-                _radiusAttack, _layerMask)
-            && _agent.isStopped == false
-            && _isCooldownAttack == false)
+        else if (hit && !_agent.isStopped && !_isCooldownAttack)
         {
             _agent.speed = 0f;
             _anim.SetBool("isAttack", true);
