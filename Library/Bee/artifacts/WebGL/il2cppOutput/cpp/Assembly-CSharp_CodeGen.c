@@ -45,6 +45,11 @@ extern void BulletController_OnTriggerEnter_mB26F2A367FCFB6BB887B25780D510C56FA5
 extern void BulletController__ctor_mE8F501E410EA15E4ACA6706043D2A820186FAD0D (void);
 extern void ContainerHostage__ctor_mFF66297C1C03313474A8AAB5547FAF0557C8072F (void);
 extern void ContainerPositions__ctor_mD68351D994B3DA7C533015F4F18027BE65926D06 (void);
+extern void Door_Start_m21FDBEEE08A08BAED224B9928B91C5AB578FF330 (void);
+extern void Door_Update_m3F40A4C15E86B20E0797D4CC3B43B62B86EA58BA (void);
+extern void Door_OnTriggerEnter_m4F2D74E90F3519BC737F450B2E85638F725C611F (void);
+extern void Door_OnTriggerExit_m0A557DEA41ADAA1B33F4C018D79E5054D0E37D7F (void);
+extern void Door__ctor_m3D2DF383E9B8EE863AD8F8421F0DF83F5B35EAB1 (void);
 extern void EnemyController_get_Health_mEEECE5DFAF48F38BC4229F4F6FAC624ADD4F0D16 (void);
 extern void EnemyController_set_Health_m516E002012C69472CD6A375C767A534518497352 (void);
 extern void EnemyController_Start_mD47FA99710AFEDA91637E73B4109FC0125032604 (void);
@@ -96,6 +101,9 @@ extern void U3CShootU3Ed__9_MoveNext_mF3EB10E7CEAF62EC0F995D6A46FE5A19FED12969 (
 extern void U3CShootU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7F71C9E00646F9F53F60B0556098B2BBADC201FD (void);
 extern void U3CShootU3Ed__9_System_Collections_IEnumerator_Reset_mD087A80DAD406DBD7557EC06E4A3E53028CCB107 (void);
 extern void U3CShootU3Ed__9_System_Collections_IEnumerator_get_Current_m647138E60D9C5D1F1368D9229B91DFF75BA31AED (void);
+extern void AutoTiling_Awake_mE6FC686EF7E158E781A1BA41337CBA2CF4EAA5C9 (void);
+extern void AutoTiling_Start_m85B29D2D7479E5A0EB283FDB8283BA2FD45FD124 (void);
+extern void AutoTiling__ctor_m0AB04DC665D61890AE61E529F2CD98FA0430EDD2 (void);
 extern void GameManager_OnEnable_mCBA3C942196F2FE284CA416B26833E78468F635E (void);
 extern void GameManager_OnDisable_mF3CB4DACBE9C8FF46B0ED4D4E7BD71315230B968 (void);
 extern void GameManager_Update_m7F29D8E933B8D21D2E67507979C0F12ACF87BB41 (void);
@@ -534,7 +542,7 @@ extern void YandexMetricaExample_TestSend4_m1A4B67F61BD47E4AEAD9B15B4DE2576CF490
 extern void YandexMetricaExample_TestSend5_m4A9630D7D041DAC5567F4EFA47FF59E882103AB2 (void);
 extern void YandexMetricaExample__ctor_m2301A1A6F4D4D658A88D92D7FD8F3E64F5A5533C (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[526] = 
+static Il2CppMethodPointer s_methodPointers[534] = 
 {
 	dg_simpleCamFollow_Start_m96D879ED52DCF65CAD4E126FCEA491FE69F4E70C,
 	dg_simpleCamFollow_FixedUpdate_m83F07B908EF8B1595590F04D07925F67FC0AAECB,
@@ -569,6 +577,11 @@ static Il2CppMethodPointer s_methodPointers[526] =
 	BulletController__ctor_mE8F501E410EA15E4ACA6706043D2A820186FAD0D,
 	ContainerHostage__ctor_mFF66297C1C03313474A8AAB5547FAF0557C8072F,
 	ContainerPositions__ctor_mD68351D994B3DA7C533015F4F18027BE65926D06,
+	Door_Start_m21FDBEEE08A08BAED224B9928B91C5AB578FF330,
+	Door_Update_m3F40A4C15E86B20E0797D4CC3B43B62B86EA58BA,
+	Door_OnTriggerEnter_m4F2D74E90F3519BC737F450B2E85638F725C611F,
+	Door_OnTriggerExit_m0A557DEA41ADAA1B33F4C018D79E5054D0E37D7F,
+	Door__ctor_m3D2DF383E9B8EE863AD8F8421F0DF83F5B35EAB1,
 	EnemyController_get_Health_mEEECE5DFAF48F38BC4229F4F6FAC624ADD4F0D16,
 	EnemyController_set_Health_m516E002012C69472CD6A375C767A534518497352,
 	EnemyController_Start_mD47FA99710AFEDA91637E73B4109FC0125032604,
@@ -624,6 +637,9 @@ static Il2CppMethodPointer s_methodPointers[526] =
 	U3CShootU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7F71C9E00646F9F53F60B0556098B2BBADC201FD,
 	U3CShootU3Ed__9_System_Collections_IEnumerator_Reset_mD087A80DAD406DBD7557EC06E4A3E53028CCB107,
 	U3CShootU3Ed__9_System_Collections_IEnumerator_get_Current_m647138E60D9C5D1F1368D9229B91DFF75BA31AED,
+	AutoTiling_Awake_mE6FC686EF7E158E781A1BA41337CBA2CF4EAA5C9,
+	AutoTiling_Start_m85B29D2D7479E5A0EB283FDB8283BA2FD45FD124,
+	AutoTiling__ctor_m0AB04DC665D61890AE61E529F2CD98FA0430EDD2,
 	GameManager_OnEnable_mCBA3C942196F2FE284CA416B26833E78468F635E,
 	GameManager_OnDisable_mF3CB4DACBE9C8FF46B0ED4D4E7BD71315230B968,
 	GameManager_Update_m7F29D8E933B8D21D2E67507979C0F12ACF87BB41,
@@ -1063,7 +1079,7 @@ static Il2CppMethodPointer s_methodPointers[526] =
 	YandexMetricaExample__ctor_m2301A1A6F4D4D658A88D92D7FD8F3E64F5A5533C,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876,
 };
-static const int32_t s_InvokerIndices[526] = 
+static const int32_t s_InvokerIndices[534] = 
 {
 	4203,
 	4203,
@@ -1098,6 +1114,11 @@ static const int32_t s_InvokerIndices[526] =
 	4203,
 	4203,
 	4203,
+	4203,
+	4203,
+	3396,
+	3396,
+	4203,
 	4089,
 	3372,
 	4203,
@@ -1153,6 +1174,9 @@ static const int32_t s_InvokerIndices[526] =
 	4115,
 	4203,
 	4115,
+	4203,
+	4203,
+	4203,
 	4203,
 	4203,
 	4203,
@@ -1596,7 +1620,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	526,
+	534,
 	s_methodPointers,
 	0,
 	NULL,
