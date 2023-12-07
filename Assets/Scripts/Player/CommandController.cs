@@ -10,9 +10,9 @@ public class CommandController : MonoBehaviour
     [SerializeField] private List<GameObject> _hostagesObj = new List<GameObject>();
     private ContainerHostage _containerHostage;
 
-    private void Awake()
+    public void Initialize(ContainerHostage containerHostage)
     {
-        _containerHostage = FindObjectOfType<ContainerHostage>();
+        _containerHostage = containerHostage;
     }
     private void Start()
     {

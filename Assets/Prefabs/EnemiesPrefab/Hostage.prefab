@@ -876,7 +876,6 @@ GameObject:
   - component: {fileID: 6071393134009170813}
   - component: {fileID: 8093271824667075355}
   - component: {fileID: 3089845504112294131}
-  - component: {fileID: 8172732051539621884}
   m_Layer: 8
   m_Name: Hostage
   m_TagString: Enemy
@@ -1013,24 +1012,6 @@ MonoBehaviour:
   _anim: {fileID: 0}
   _agent: {fileID: 0}
   _startHealth: 1
---- !u!114 &8172732051539621884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2745040973140685893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 4
-  outlineColor: {r: 0.047058824, g: 0.7921569, b: 0.09019608, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &2978223502974366331
 GameObject:
   m_ObjectHideFlags: 0

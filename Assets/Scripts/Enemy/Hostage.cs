@@ -41,9 +41,13 @@ public class Hostage : MonoBehaviour, IDamagable
     {
         _rb = GetComponent<Rigidbody>();
         _collider = GetComponent<Collider>();
-        _playerPos = FindObjectOfType<PlayerController>().transform;
         _anim = GetComponent<Animator>();
         _agent = GetComponent<NavMeshAgent>();
+    }
+
+    public void Initialize(Transform playerTransform)
+    {
+        _playerPos = playerTransform;
     }
 
     private void Start()
