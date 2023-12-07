@@ -4,50 +4,32 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject GameOverObj;
-    public GameObject GameWinObj;
-    [SerializeField] private int _countHostageForWin;
-    [SerializeField] private int _count;
-    private void OnEnable()
-    {
-        Hostage.hostageZone += Add;
-        Hostage.hostageDie += GameOver;
-        PlayerController.playerDie += GameOver;
-    }
-    private void OnDisable()
-    {
-        Hostage.hostageZone -= Add;
-        Hostage.hostageDie -= GameOver;
-        PlayerController.playerDie -= GameOver;
-    }
+    [SerializeField] private Transform _playerTransform;
+    [SerializeField] private ContainerPositions _containerPositionsForPatrul;
+    [SerializeField] private ObjectPoolController _poolController;
 
-    private void Update()
+    //Enemy
+    [SerializeField] private GameObject _enemyKnife;
+    [SerializeField] private GameObject _enemyGun;
+
+    //Positions
+    [SerializeField] private List<Transform> positionsEnemyKnife = new List<Transform>();
+    [SerializeField] private List<Transform> positionsEnemyGun = new List<Transform>();
+
+    private void Start()
     {
-        if (_count == _countHostageForWin)
+        for (int i = 0; i < positionsEnemyKnife.Count; i++)
         {
-            GameWin();
+            ManKnife manKnife = _enemyKnife.GetComponent<ManKnife>();
+            manKnife?.Initialize(_playerTransform, _containerPositionsForPatrul);
+            Instantiate(_enemyKnife, positionsEnemyKnife[i].position, Quaternion.identity);
         }
-    }
 
-    private void Add()
-    {
-        _count++;
-    }
-
-    private void GameOver()
-    {
-        StartCoroutine(EndGameCoroutine(GameOverObj));
-    }
-
-    private void GameWin()
-    {
-        StartCoroutine(EndGameCoroutine(GameWinObj));
-    }
-
-    private IEnumerator EndGameCoroutine(GameObject obj)
-    {
-        yield return new WaitForSeconds(2f);
-        obj.SetActive(true);
-        Time.timeScale = 0f;
+        for (int i = 0; i < positionsEnemyGun.Count; i++)
+        {
+            ManGun manGun = _enemyGun.GetComponent<ManGun>();
+            manGun?.Initialize(_playerTransform, _poolController);
+            Instantiate(_enemyGun, positionsEnemyGun[i].position, Quaternion.identity);
+        }
     }
 }

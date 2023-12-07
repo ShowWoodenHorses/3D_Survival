@@ -355,7 +355,7 @@
 "Assets/Scripts/Enemy/Hostage.cs"
 "Assets/Scripts/Enemy/IDamagable.cs"
 "Assets/Scripts/Enemy/ManGun.cs"
-"Assets/Scripts/Enemy/Zombi.cs"
+"Assets/Scripts/Enemy/ManKnife.cs"
 "Assets/Scripts/ForTexture/AutoTiling.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/MenuManager.cs"

@@ -51,6 +51,9 @@ public class BulletController : MonoBehaviour
     private IEnumerator ReturnBulletToPool(GameObject bullet)
     {
         yield return new WaitForSeconds(5);
-        _poolController.ReturnObjectToPool(bullet);
+        if (bullet != null)
+        {
+            _poolController.ReturnObjectToPool(bullet);
+        }
     }
 }

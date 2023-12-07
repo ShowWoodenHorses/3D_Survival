@@ -3,22 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Zombi : EnemyController
+public class ManKnife : EnemyController
 {
 
     [SerializeField] private List<Transform> _positionsForPatrul = new List<Transform>();
     private int _indexMoveForPatrul = 0;
 
-    private ContainerPositions _containerPositions;
+    [SerializeField] private ContainerPositions _containerPositions;
 
     public void Awake()
     {
         _rb = GetComponent<Rigidbody>();
         _collider = GetComponent<Collider>();
-        _playerPos = FindObjectOfType<PlayerController>().transform;
         _anim = GetComponent<Animator>();
         _agent = GetComponent<NavMeshAgent>();
-        _containerPositions = FindObjectOfType<ContainerPositions>();
+    }
+
+    public void Initialize(Transform transformPlayer, ContainerPositions containerPositions)
+    {
+        _containerPositions = containerPositions;
+        _playerPos = transformPlayer;
     }
 
     private void Start()
@@ -28,6 +32,7 @@ public class Zombi : EnemyController
             _positionsForPatrul.Add(_containerPositions.ContainerWithPositionsForPatrul[i]);
         }
         _agent.destination = _positionsForPatrul[Random.Range(0, _positionsForPatrul.Count)].position;
+
     }
 
     public void Update()
