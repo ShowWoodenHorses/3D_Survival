@@ -36,16 +36,16 @@ public class ManGun : EnemyController
             transform.TransformDirection(Vector3.forward),
             out RaycastHit hitinfo, _layerMask);
 
-        if (isRange && !_agent.isStopped)
+        if (isRange && !_agent.isStopped && Health > 0)
         {
-            Move();
             _anim.SetBool("isAttack", false);
+            Move();
         }
         else if (hit && !_agent.isStopped && !_isCooldownAttack && Health > 0)
         {
             _agent.speed = 0f;
             Vector3 direction = _playerPos.position - transform.position;
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation( direction), 1f);
+            transform.rotation = Quaternion.LookRotation(direction);
             _anim.SetBool("isAttack", true);
             StartCoroutine(Shoot());
         }

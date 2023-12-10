@@ -876,6 +876,7 @@ GameObject:
   - component: {fileID: 6071393134009170813}
   - component: {fileID: 8093271824667075355}
   - component: {fileID: 3089845504112294131}
+  - component: {fileID: 3347291972849683525}
   m_Layer: 8
   m_Name: Hostage
   m_TagString: Enemy
@@ -947,7 +948,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!136 &6071393134009170813
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1012,6 +1013,18 @@ MonoBehaviour:
   _anim: {fileID: 0}
   _agent: {fileID: 0}
   _startHealth: 1
+--- !u!114 &3347291972849683525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2745040973140685893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb0ff4c0cf33aa4cb2eb70aa05bdc0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2978223502974366331
 GameObject:
   m_ObjectHideFlags: 0

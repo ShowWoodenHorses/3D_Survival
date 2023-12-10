@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -65,9 +66,9 @@ public class Hostage : MonoBehaviour, IDamagable
         }
     }
 
-    public void HostageZoneTrigger(Collider other)
+    public void EnemyInHostageZone(Collider other)
     {
-        if (other.gameObject.CompareTag("HostageZone"))
+        if (other.GetComponent<HostageZoneTrigger>())
         {
             _agent.isStopped = true;
             isFollow = false;
@@ -78,7 +79,7 @@ public class Hostage : MonoBehaviour, IDamagable
 
     private void OnTriggerEnter(Collider other)
     {
-        HostageZoneTrigger(other);
+        EnemyInHostageZone(other);
     }
 
     public void TakeDamage(int damage)

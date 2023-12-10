@@ -744,6 +744,7 @@ GameObject:
   - component: {fileID: 1924288610466348517}
   - component: {fileID: 2764011179151081954}
   - component: {fileID: 5576921714375783201}
+  - component: {fileID: 3963581812133843726}
   m_Layer: 0
   m_Name: ManWithGun
   m_TagString: Enemy
@@ -816,7 +817,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!136 &1924288610466348517
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -888,10 +889,22 @@ MonoBehaviour:
   _startHealth: 3
   _bulletPos: {fileID: 3474068140004638424}
   _bulletPrefab: {fileID: 8147328900615496587, guid: 34ddbcfd06898f64582b3b445a5f7c2d, type: 3}
-  _sphereRadius: 0
+  _poolController: {fileID: 0}
   _layerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &3963581812133843726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2258596617078957573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb0ff4c0cf33aa4cb2eb70aa05bdc0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2372628320680243310
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,7 +930,7 @@ Transform:
   m_GameObject: {fileID: 2372628320680243310}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.039, y: 1.456, z: 1.42}
+  m_LocalPosition: {x: -0.039, y: 1.456, z: 0.475}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2021,6 +2034,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3914846332773435753}
+  - component: {fileID: 6561644011003042962}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -2050,6 +2064,27 @@ Transform:
   - {fileID: 7122326900963060345}
   m_Father: {fileID: 169046319164564186}
   m_LocalEulerAnglesHint: {x: -90, y: -77.479, z: 166.332}
+--- !u!65 &6561644011003042962
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235250586473929873}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.050197184, y: 0.12092491, z: 0.27736908}
+  m_Center: {x: 0.0059557073, y: 0.022096979, z: 0.021277312}
 --- !u!1 &6251313034270807840
 GameObject:
   m_ObjectHideFlags: 0

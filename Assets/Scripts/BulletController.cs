@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BulletController : MonoBehaviour
@@ -36,13 +37,12 @@ public class BulletController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Enemy")
-            || other.gameObject.CompareTag("Player"))
+        if (other.GetComponent<BulletTrigger>())
         {
             other.GetComponent<IDamagable>().TakeDamage(_damage);
             _poolController.ReturnObjectToPool(this.gameObject);
         }
-        if (other.gameObject.CompareTag("Obstacle"))
+        else if (other.gameObject.CompareTag("Obstacle"))
         {
             _poolController.ReturnObjectToPool(this.gameObject);
         }

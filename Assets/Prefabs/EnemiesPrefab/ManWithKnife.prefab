@@ -1859,6 +1859,7 @@ GameObject:
   - component: {fileID: 6811479159570696277}
   - component: {fileID: 964016626882481962}
   - component: {fileID: 3778536181155408199}
+  - component: {fileID: 3069056388969530640}
   m_Layer: 0
   m_Name: ManWithKnife
   m_TagString: Enemy
@@ -1930,7 +1931,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!136 &6811479159570696277
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2002,6 +2003,18 @@ MonoBehaviour:
   _startHealth: 2
   _positionsForPatrul: []
   _containerPositions: {fileID: 0}
+--- !u!114 &3069056388969530640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6415623479133042217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb0ff4c0cf33aa4cb2eb70aa05bdc0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6736484667451902945
 GameObject:
   m_ObjectHideFlags: 0

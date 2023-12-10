@@ -487,6 +487,7 @@ GameObject:
   - component: {fileID: 27435544}
   - component: {fileID: 27435543}
   - component: {fileID: 27435542}
+  - component: {fileID: 27435545}
   m_Layer: 0
   m_Name: HostageZone
   m_TagString: HostageZone
@@ -580,6 +581,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 27435540}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &27435545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27435540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b32cda3107507441a4a215e48e0041c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &36303606
 Mesh:
   m_ObjectHideFlags: 0
@@ -2187,6 +2200,10 @@ PrefabInstance:
     - target: {fileID: 1564973426272098, guid: 392a16315036bf8438d6ff5eb74e8a01, type: 3}
       propertyPath: m_Name
       value: medic box prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564973426272098, guid: 392a16315036bf8438d6ff5eb74e8a01, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4889411900906002, guid: 392a16315036bf8438d6ff5eb74e8a01, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37217,6 +37234,7 @@ GameObject:
   - component: {fileID: 1774170316}
   - component: {fileID: 1774170320}
   - component: {fileID: 1774170318}
+  - component: {fileID: 5866666021949660798}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -39077,6 +39095,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5866666021949660798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149119213245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb0ff4c0cf33aa4cb2eb70aa05bdc0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5897364122337555316
 GameObject:
   m_ObjectHideFlags: 0
