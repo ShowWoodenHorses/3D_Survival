@@ -382,6 +382,7 @@
 "Assets/Scripts/Player/CommandController.cs"
 "Assets/Scripts/Player/GunPlayer.cs"
 "Assets/Scripts/Player/PlayerController.cs"
+"Assets/Scripts/Player/SetMaterialToInvisible.cs"
 "Assets/YandexGame/DebuggingMode/Scripts/DebuggingModeYG.cs"
 "Assets/YandexGame/Example/Scripts/DebugViewing.cs"
 "Assets/YandexGame/Example/Scripts/GetPlayerData.cs"

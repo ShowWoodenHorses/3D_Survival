@@ -97,6 +97,7 @@
     <Compile Include="Assets\Brick Project Studio\Apartment Kit\Common\Scripts &amp; Animation\Closet\ClosetopencloseDoor.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\LanguageExample.cs" />
+    <Compile Include="Assets\Scripts\Player\SetMaterialToInvisible.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\YandexGame\WorkingData\SavesYG.cs" />
