@@ -3646,6 +3646,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23579287908934112, guid: 1ecade4a1e0e6bc4f9c2fb095cb6506d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22dc482a742692b47a41df215da8133b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36382,6 +36386,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23579287908934112, guid: 1ecade4a1e0e6bc4f9c2fb095cb6506d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22dc482a742692b47a41df215da8133b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59786,6 +59794,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23579287908934112, guid: 1ecade4a1e0e6bc4f9c2fb095cb6506d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22dc482a742692b47a41df215da8133b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -65847,6 +65859,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23579287908934112, guid: 1ecade4a1e0e6bc4f9c2fb095cb6506d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22dc482a742692b47a41df215da8133b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -68508,24 +68524,6 @@ MonoBehaviour:
   _isCooldown: 0
   _offset: 50
   _poolController: {fileID: 2098255548}
---- !u!114 &1774170318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132149119213245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 4
-  outlineColor: {r: 0.058823533, g: 0.87027466, b: 0.98039216, a: 0.83137256}
-  outlineWidth: 1
-  precomputeOutline: 1
-  bakeKeys: []
-  bakeValues: []
 --- !u!114 &1774170320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82988,8 +82986,8 @@ GameObject:
   - component: {fileID: 1774170310}
   - component: {fileID: 1774170316}
   - component: {fileID: 1774170320}
-  - component: {fileID: 1774170318}
   - component: {fileID: 5866666021949660798}
+  - component: {fileID: 5866666021949660799}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -86510,6 +86508,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddb0ff4c0cf33aa4cb2eb70aa05bdc0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5866666021949660799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149119213245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 4
+  outlineColor: {r: 0, g: 0.48899588, b: 0.6415094, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 1
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &5897364122337555316
 GameObject:
   m_ObjectHideFlags: 0
