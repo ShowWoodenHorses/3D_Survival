@@ -48704,6 +48704,7 @@ Transform:
   - {fileID: 1438387417}
   - {fileID: 277431253}
   - {fileID: 1386071524}
+  - {fileID: 1531115656}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1138343079
@@ -67162,14 +67163,16 @@ LightProbeGroup:
   - {x: 2.1983643, y: -1, z: 22.63379}
   - {x: 2.1983643, y: 1, z: 15.987535}
   - {x: 2.1983643, y: -1, z: 15.987535}
-  - {x: -15.101911, y: 1, z: 14.912535}
-  - {x: -15.101911, y: -1, z: 14.912535}
+  - {x: -15.101911, y: 1, z: 6.58919}
+  - {x: -15.101911, y: -1, z: 6.58919}
   - {x: 2.3490753, y: 1, z: -2.434155}
   - {x: 2.5474663, y: -1, z: -2.1386147}
   - {x: -5.64015, y: 1, z: 14.912535}
   - {x: -5.64015, y: -1, z: 14.912535}
   - {x: -4.200382, y: 1, z: -4.029172}
   - {x: -4.0019913, y: -1, z: -3.7336316}
+  - {x: -15.101911, y: 1, z: 14.912535}
+  - {x: -15.101911, y: -1, z: 14.912535}
   m_Dering: 1
 --- !u!4 &1531115656
 Transform:
@@ -67179,12 +67182,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531115654}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 24.15669, y: 1.88, z: -5.28204}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1138170521}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1532019198 stripped
 Transform:
@@ -95794,6 +95797,7 @@ GameObject:
   - component: {fileID: 1774170320}
   - component: {fileID: 5866666021949660798}
   - component: {fileID: 5866666021949660799}
+  - component: {fileID: 5866666021949660800}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -99453,6 +99457,18 @@ MonoBehaviour:
   precomputeOutline: 1
   bakeKeys: []
   bakeValues: []
+--- !u!114 &5866666021949660800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149119213245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2e08ac38cd3f64798fc281302a05b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5897364122337555316
 GameObject:
   m_ObjectHideFlags: 0
@@ -101663,4 +101679,3 @@ SceneRoots:
   - {fileID: 182281803}
   - {fileID: 845754002}
   - {fileID: 1296433137}
-  - {fileID: 1531115656}

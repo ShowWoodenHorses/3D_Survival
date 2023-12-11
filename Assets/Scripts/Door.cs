@@ -29,7 +29,7 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<PlayerController>())
+        if (other.GetComponent<DoorTrigger>())
         {
             DoorOpen();
         }
@@ -37,7 +37,7 @@ public class Door : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.GetComponent<PlayerController>())
+        if (other.GetComponent<DoorTrigger>())
         {
             DoorClose();
         }

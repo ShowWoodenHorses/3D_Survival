@@ -265,6 +265,14 @@
             "icon": null
           },
           {
+            "name": "LightProbeGroup",
+            "scenes": [
+              "Assets/Scenes/Level_1.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "LightProbes",
             "scenes": [
               "Assets/Scenes/Level_1.unity"

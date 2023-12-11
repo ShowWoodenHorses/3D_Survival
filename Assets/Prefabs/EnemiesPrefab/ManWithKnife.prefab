@@ -1860,6 +1860,7 @@ GameObject:
   - component: {fileID: 964016626882481962}
   - component: {fileID: 3778536181155408199}
   - component: {fileID: 3069056388969530640}
+  - component: {fileID: 8858094769899943508}
   m_Layer: 0
   m_Name: ManWithKnife
   m_TagString: Enemy
@@ -2013,6 +2014,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddb0ff4c0cf33aa4cb2eb70aa05bdc0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8858094769899943508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6415623479133042217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2e08ac38cd3f64798fc281302a05b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6736484667451902945

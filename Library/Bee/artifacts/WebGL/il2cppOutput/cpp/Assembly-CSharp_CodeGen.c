@@ -102,6 +102,7 @@ extern void Door_OnTriggerExit_m0A557DEA41ADAA1B33F4C018D79E5054D0E37D7F (void);
 extern void Door_DoorOpen_m221D1467408DF3891EB7E36E5F632DA98B0670CA (void);
 extern void Door_DoorClose_m1F1BD2E37C2184926650A464AEF1790E3712863A (void);
 extern void Door__ctor_m3D2DF383E9B8EE863AD8F8421F0DF83F5B35EAB1 (void);
+extern void DoorTrigger__ctor_m0B4A73B23EC8FA797A1AA598CA2968C7F58B954B (void);
 extern void EnemyController_get_Health_mEEECE5DFAF48F38BC4229F4F6FAC624ADD4F0D16 (void);
 extern void EnemyController_set_Health_m516E002012C69472CD6A375C767A534518497352 (void);
 extern void EnemyController_Start_mD47FA99710AFEDA91637E73B4109FC0125032604 (void);
@@ -829,7 +830,7 @@ extern void U3CopeningU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_Ob
 extern void U3CopeningU3Ed__5_System_Collections_IEnumerator_Reset_m012A9CBE69059A1EE21B0EB45D3CB59675CC4A0E (void);
 extern void U3CopeningU3Ed__5_System_Collections_IEnumerator_get_Current_m7DE53FEB321C4930699C6DD1990874E90E1CDA82 (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[821] = 
+static Il2CppMethodPointer s_methodPointers[822] = 
 {
 	TableFlipL_Start_m0593EFF2345620173604B8933379E83820FD12C8,
 	TableFlipL_OnMouseOver_m3799C9F20B4367FF848CF30D478EABE94498E23B,
@@ -921,6 +922,7 @@ static Il2CppMethodPointer s_methodPointers[821] =
 	Door_DoorOpen_m221D1467408DF3891EB7E36E5F632DA98B0670CA,
 	Door_DoorClose_m1F1BD2E37C2184926650A464AEF1790E3712863A,
 	Door__ctor_m3D2DF383E9B8EE863AD8F8421F0DF83F5B35EAB1,
+	DoorTrigger__ctor_m0B4A73B23EC8FA797A1AA598CA2968C7F58B954B,
 	EnemyController_get_Health_mEEECE5DFAF48F38BC4229F4F6FAC624ADD4F0D16,
 	EnemyController_set_Health_m516E002012C69472CD6A375C767A534518497352,
 	EnemyController_Start_mD47FA99710AFEDA91637E73B4109FC0125032604,
@@ -1653,7 +1655,7 @@ static Il2CppMethodPointer s_methodPointers[821] =
 	U3CopeningU3Ed__5_System_Collections_IEnumerator_get_Current_m7DE53FEB321C4930699C6DD1990874E90E1CDA82,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876,
 };
-static const int32_t s_InvokerIndices[821] = 
+static const int32_t s_InvokerIndices[822] = 
 {
 	4726,
 	4726,
@@ -1742,6 +1744,7 @@ static const int32_t s_InvokerIndices[821] =
 	4726,
 	3819,
 	3819,
+	4726,
 	4726,
 	4726,
 	4726,
@@ -2481,7 +2484,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	821,
+	822,
 	s_methodPointers,
 	0,
 	NULL,
