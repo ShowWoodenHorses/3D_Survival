@@ -876,7 +876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedMove: 2
-  _radiusDetected: 10
+  _radiusDetected: 6
   _radiusAttack: 5
   _isCooldownAttack: 0
   _cooldownTime: 1

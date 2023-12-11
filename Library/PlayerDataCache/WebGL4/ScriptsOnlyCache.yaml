@@ -23,12 +23,7 @@ ScriptsOnlyBuild:
     - YG.YandexGame
     - dg_simpleCamFollow
     Unity.ProBuilder.Editor.dll:
-    - UnityEditor.ProBuilder.PositionToolContext
     - UnityEditor.ProBuilder.ProBuilderEditor
-    - UnityEditor.ProBuilder.ProBuilderShapeEditor
-    - UnityEditor.ProBuilder.ProbuilderMoveTool
-    - UnityEditor.ProBuilder.ProbuilderRotateTool
-    - UnityEditor.ProBuilder.ProbuilderScaleTool
     Unity.ProBuilder.dll:
     - UnityEngine.ProBuilder.ProBuilderMesh
     - UnityEngine.ProBuilder.Shapes.ProBuilderShape
@@ -145,45 +140,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16668}
     - Class: 114
-      Script: {instanceID: 17010}
+      Script: {instanceID: 17012}
     - Class: 114
-      Script: {instanceID: 17718}
+      Script: {instanceID: 17724}
     - Class: 114
-      Script: {instanceID: 17782}
+      Script: {instanceID: 17788}
     - Class: 114
-      Script: {instanceID: 17784}
+      Script: {instanceID: 17790}
     - Class: 114
-      Script: {instanceID: 18004}
+      Script: {instanceID: 18010}
     - Class: 114
-      Script: {instanceID: 19112}
+      Script: {instanceID: 19122}
     - Class: 114
-      Script: {instanceID: 20376}
+      Script: {instanceID: 20388}
     - Class: 114
-      Script: {instanceID: 20818}
+      Script: {instanceID: 20830}
     - Class: 114
-      Script: {instanceID: 21138}
+      Script: {instanceID: 21150}
     - Class: 114
-      Script: {instanceID: 21344}
+      Script: {instanceID: 21356}
     - Class: 114
-      Script: {instanceID: 21698}
+      Script: {instanceID: 21714}
     - Class: 114
-      Script: {instanceID: 21904}
+      Script: {instanceID: 21924}
     - Class: 114
-      Script: {instanceID: 22462}
+      Script: {instanceID: 22488}
     - Class: 114
-      Script: {instanceID: 22804}
+      Script: {instanceID: 22830}
     - Class: 114
-      Script: {instanceID: 22926}
+      Script: {instanceID: 22954}
     - Class: 114
-      Script: {instanceID: 23072}
+      Script: {instanceID: 23102}
     - Class: 114
-      Script: {instanceID: 23206}
+      Script: {instanceID: 23238}
     - Class: 114
-      Script: {instanceID: 23542}
+      Script: {instanceID: 23580}
     - Class: 114
-      Script: {instanceID: 23560}
+      Script: {instanceID: 23598}
     - Class: 114
-      Script: {instanceID: 23588}
+      Script: {instanceID: 23626}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -258,53 +253,53 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16668}
     - Class: 114
-      Script: {instanceID: 17010}
+      Script: {instanceID: 17012}
     - Class: 114
-      Script: {instanceID: 17718}
+      Script: {instanceID: 17670}
     - Class: 114
-      Script: {instanceID: 17782}
+      Script: {instanceID: 17724}
     - Class: 114
-      Script: {instanceID: 17784}
+      Script: {instanceID: 17788}
     - Class: 114
-      Script: {instanceID: 18004}
+      Script: {instanceID: 17790}
     - Class: 114
-      Script: {instanceID: 19112}
+      Script: {instanceID: 18010}
     - Class: 114
-      Script: {instanceID: 19624}
+      Script: {instanceID: 19122}
     - Class: 114
-      Script: {instanceID: 20346}
+      Script: {instanceID: 19636}
     - Class: 114
-      Script: {instanceID: 20376}
+      Script: {instanceID: 20358}
     - Class: 114
-      Script: {instanceID: 20818}
+      Script: {instanceID: 20388}
     - Class: 114
-      Script: {instanceID: 21138}
+      Script: {instanceID: 20830}
     - Class: 114
-      Script: {instanceID: 21344}
+      Script: {instanceID: 21150}
     - Class: 114
-      Script: {instanceID: 21698}
+      Script: {instanceID: 21356}
     - Class: 114
-      Script: {instanceID: 21904}
+      Script: {instanceID: 21714}
     - Class: 114
-      Script: {instanceID: 22462}
+      Script: {instanceID: 21924}
     - Class: 114
-      Script: {instanceID: 22542}
+      Script: {instanceID: 22488}
     - Class: 114
-      Script: {instanceID: 22804}
+      Script: {instanceID: 22568}
     - Class: 114
-      Script: {instanceID: 22926}
+      Script: {instanceID: 22830}
     - Class: 114
-      Script: {instanceID: 23072}
+      Script: {instanceID: 22954}
     - Class: 114
-      Script: {instanceID: 23206}
+      Script: {instanceID: 23102}
     - Class: 114
-      Script: {instanceID: 23542}
+      Script: {instanceID: 23238}
     - Class: 114
-      Script: {instanceID: 23560}
+      Script: {instanceID: 23580}
     - Class: 114
-      Script: {instanceID: 23588}
+      Script: {instanceID: 23598}
     - Class: 114
-      Script: {instanceID: 257186}
+      Script: {instanceID: 23626}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -410,6 +405,12 @@ ScriptsOnlyBuild:
     className: LayoutElement
   - hash:
       serializedVersion: 2
+      Hash: cb91a0bbd4a72dfa2aa30e5248ad4734
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: PlayerMovement
+  - hash:
+      serializedVersion: 2
       Hash: 1ed2c6278a809fcb97c4b0e845bbecc5
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -476,6 +477,12 @@ ScriptsOnlyBuild:
     className: UnityOnJointBreakMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 1e0fc83e4e71600d5292c08e64f05c11
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: Drawer_Pull_Zopp
+  - hash:
+      serializedVersion: 2
       Hash: 1c3b4d20b27913215f842c2c6a4da5e3
     assemblyName: Assembly-CSharp
     namespaceName: YG.Example
@@ -492,6 +499,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameVisibleMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 44fb1aa4d694095f1a7887ff0f8e045b
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: Drawer_Pull_X
   - hash:
       serializedVersion: 2
       Hash: cb5944105bda8788266b10909273860f
@@ -680,6 +693,12 @@ ScriptsOnlyBuild:
     className: UnityOnTransformParentChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: b9d2455ffe3a764a5277084c4c5f8521
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: opencloseSlide
+  - hash:
+      serializedVersion: 2
       Hash: 0249933f35dcc970b31eaae0159aebf9
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -708,6 +727,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSelectMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 38202db16f571f78b02739335a700844
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: OvenFlip
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -786,6 +811,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerController
+  - hash:
+      serializedVersion: 2
+      Hash: 7815d2fc89727e923fdc17dbe40a1e9d
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: opencloseStallDoor
   - hash:
       serializedVersion: 2
       Hash: b18151310f999106767addd7177d1a99
@@ -1148,6 +1179,18 @@ ScriptsOnlyBuild:
     className: Hostage
   - hash:
       serializedVersion: 2
+      Hash: 1e0fc83e4e71600d5292c08e64f05c11
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: Drawer_Pull_Z
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: SceneSwitchGen
+  - hash:
+      serializedVersion: 2
       Hash: 858785bc4ec9c9ac832e1fb71a0d104c
     assemblyName: Assembly-CSharp
     namespaceName: YG
@@ -1208,6 +1251,18 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 554fda879d7c08a522b687a8b1ba5917
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: ClosetopencloseDoor
+  - hash:
+      serializedVersion: 2
+      Hash: f443a05a7a3dad8ee45c726d655bb933
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TableFlipR
+  - hash:
+      serializedVersion: 2
       Hash: 54b1267ee8ad00af981eb65966ce8357
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -1230,6 +1285,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: YG.Example
     className: OpenAuthorizationDialog
+  - hash:
+      serializedVersion: 2
+      Hash: 7815d2fc89727e923fdc17dbe40a1e9d
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: opencloseDoor
+  - hash:
+      serializedVersion: 2
+      Hash: 50a1fbf40ef809f65b7d4d32ba53b0ae
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: MouseLook
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1272,6 +1339,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionExitMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: b9d2455ffe3a764a5277084c4c5f8521
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: opencloseWindow
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1400,6 +1473,12 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: 135aa12b5d48e77f930db7b136e7daa3
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: opencloseDoor1
+  - hash:
+      serializedVersion: 2
       Hash: 68271b4857e033a7fbf72f18940d504d
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -1410,6 +1489,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: b9d2455ffe3a764a5277084c4c5f8521
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: opencloseWindowApt
   - hash:
       serializedVersion: 2
       Hash: cf9690d29d21df007e4429155dbd354c
@@ -1436,6 +1521,12 @@ ScriptsOnlyBuild:
     className: UnityOnParticleCollisionMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 7815d2fc89727e923fdc17dbe40a1e9d
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: BRGlassDoor
+  - hash:
+      serializedVersion: 2
       Hash: 0336d63b7b778c6c3e82d5e5e350793b
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -1460,6 +1551,12 @@ ScriptsOnlyBuild:
     className: StateMachine
   - hash:
       serializedVersion: 2
+      Hash: 23e147b7d6ed32071feae181a5d32e70
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TableFlipL
+  - hash:
+      serializedVersion: 2
       Hash: d9019921ce5b671808b19dca0cdd30d6
     assemblyName: Assembly-CSharp
     namespaceName: YG
@@ -1476,6 +1573,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 89107282a03ee5a066414379e36db666
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: opencloseWindow1
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SetMaterialToInvisible
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1536,122 +1645,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 44fb1aa4d694095f1a7887ff0f8e045b
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: Drawer_Pull_X
-  - hash:
-      serializedVersion: 2
-      Hash: b9d2455ffe3a764a5277084c4c5f8521
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: opencloseWindow
-  - hash:
-      serializedVersion: 2
-      Hash: 23e147b7d6ed32071feae181a5d32e70
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: TableFlipL
-  - hash:
-      serializedVersion: 2
-      Hash: 1e0fc83e4e71600d5292c08e64f05c11
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: Drawer_Pull_Zopp
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: SceneSwitchGen
-  - hash:
-      serializedVersion: 2
-      Hash: 554fda879d7c08a522b687a8b1ba5917
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: ClosetopencloseDoor
-  - hash:
-      serializedVersion: 2
-      Hash: f443a05a7a3dad8ee45c726d655bb933
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: TableFlipR
-  - hash:
-      serializedVersion: 2
-      Hash: 38202db16f571f78b02739335a700844
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: OvenFlip
-  - hash:
-      serializedVersion: 2
-      Hash: 7815d2fc89727e923fdc17dbe40a1e9d
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: opencloseStallDoor
-  - hash:
-      serializedVersion: 2
-      Hash: 7815d2fc89727e923fdc17dbe40a1e9d
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: BRGlassDoor
-  - hash:
-      serializedVersion: 2
-      Hash: 50a1fbf40ef809f65b7d4d32ba53b0ae
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: MouseLook
-  - hash:
-      serializedVersion: 2
-      Hash: b9d2455ffe3a764a5277084c4c5f8521
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: opencloseSlide
-  - hash:
-      serializedVersion: 2
-      Hash: 1e0fc83e4e71600d5292c08e64f05c11
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: Drawer_Pull_Z
-  - hash:
-      serializedVersion: 2
-      Hash: cb91a0bbd4a72dfa2aa30e5248ad4734
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: PlayerMovement
-  - hash:
-      serializedVersion: 2
-      Hash: 89107282a03ee5a066414379e36db666
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: opencloseWindow1
-  - hash:
-      serializedVersion: 2
-      Hash: b9d2455ffe3a764a5277084c4c5f8521
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: opencloseWindowApt
-  - hash:
-      serializedVersion: 2
-      Hash: 135aa12b5d48e77f930db7b136e7daa3
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: opencloseDoor1
-  - hash:
-      serializedVersion: 2
-      Hash: 7815d2fc89727e923fdc17dbe40a1e9d
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: opencloseDoor
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: SetMaterialToInvisible
   platform: 20
   scenePathNames:
   - Assets/Scenes/Level_1.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: D:/Vladimir/BukunGames/3D_Survival/15
+  playerPath: D:/Vladimir/BukunGames/3D_Survival/16

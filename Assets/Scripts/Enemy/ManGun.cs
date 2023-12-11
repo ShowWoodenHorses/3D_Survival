@@ -31,7 +31,7 @@ public class ManGun : EnemyController
     {
         _anim.SetFloat("speed", _agent.velocity.magnitude);
         float distanceToPlayer = Vector3.Distance(transform.position, _playerPos.position);
-        bool isRange = distanceToPlayer <= _radiusDetected && distanceToPlayer >= _radiusAttack;
+        bool isRange = distanceToPlayer > _radiusAttack;
         bool hit = Physics.SphereCast(transform.position, _radiusAttack,
             transform.TransformDirection(Vector3.forward),
             out RaycastHit hitinfo, _layerMask);
