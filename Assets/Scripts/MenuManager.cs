@@ -64,4 +64,20 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene(nameScene);
         Time.timeScale = 1.0f;
     }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0f;
+    }
+
+    public void ContinueGame()
+    {
+        Time.timeScale = 1.0f;
+    }
+
+    public void MainMenuClick()
+    {
+        SceneManager.LoadScene("");
+        Time.timeScale = 1.0f;
+    }
 }
