@@ -147,6 +147,7 @@
     <None Include="Assets\YandexGame\Fonts\LICENSE.txt" />
     <None Include="Assets\YandexGame\ScriptsYG\UnityToolbag-main\Notices.txt" />
     <None Include="Assets\YandexGame\Third-Party Notices.txt" />
+    <None Include="Assets\SkySeries Freebie\Hdri setup.txt" />
     <None Include="Assets\QuickOutline\Resources\Shaders\OutlineFill.shader" />
     <None Include="Assets\YandexGame\ScriptsYG\UnityToolbag-main\LICENSE.txt" />
   </ItemGroup>
