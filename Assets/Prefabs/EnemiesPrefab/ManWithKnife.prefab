@@ -1996,6 +1996,7 @@ MonoBehaviour:
   _isCooldownAttack: 0
   _cooldownTime: 1
   _damage: 1
+  _bloodPrefab: {fileID: 5759782845668698043, guid: e097c99ad7a86e84e839439cdf7a8e12, type: 3}
   _rb: {fileID: 0}
   _collider: {fileID: 0}
   _playerPos: {fileID: 0}

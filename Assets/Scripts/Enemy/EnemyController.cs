@@ -11,6 +11,8 @@ public abstract class EnemyController : MonoBehaviour, IDamagable
     [SerializeField] private protected float _cooldownTime;
     [SerializeField] private protected int _damage;
 
+    [SerializeField] private protected GameObject _bloodPrefab;
+
     [SerializeField] private protected Rigidbody _rb;
     [SerializeField] private protected Collider _collider;
     [SerializeField] private protected Transform _playerPos;
@@ -55,6 +57,8 @@ public abstract class EnemyController : MonoBehaviour, IDamagable
     public void TakeDamage(int damage)
     {
         Health -= damage;
+        GameObject blood = Instantiate(_bloodPrefab, transform.position, transform.rotation) as GameObject;
+        Destroy(blood?.gameObject, 2f);
     }
 
     public virtual void Attack()
