@@ -19,13 +19,13 @@ ScriptsOnlyBuild:
     - Outline
     - PlayerController
     - SojaExiles.Drawer_Pull_X
+    - UIManager
     - YG.InfoYG
     - YG.ViewingAdsYG
     - YG.YandexGame
     - dg_simpleCamFollow
     Unity.ProBuilder.Editor.dll:
     - UnityEditor.ProBuilder.ProBuilderEditor
-    - UnityEditor.ProBuilder.ProBuilderShapeEditor
     Unity.ProBuilder.dll:
     - UnityEngine.ProBuilder.ProBuilderMesh
     - UnityEngine.ProBuilder.Shapes.ProBuilderShape
@@ -79,6 +79,30 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: PauseGame
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: RestartGame
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: ContinueGame
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
     methodName: RestartGame
@@ -87,10 +111,28 @@ ScriptsOnlyBuild:
     methodName: RestartGame
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
+    methodName: MainMenuClick
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
     methodName: RestartGame
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
     methodName: RestartGame
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: StartLevelOne
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   sceneClasses:
     Assets/Scenes/GameScene.unity:
     - Class: 1
@@ -196,6 +238,10 @@ ScriptsOnlyBuild:
     - Class: 195
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -306,6 +352,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 23600}
     - Class: 114
       Script: {instanceID: 23628}
+    - Class: 114
+      Script: {instanceID: 335772}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -319,6 +367,10 @@ ScriptsOnlyBuild:
     - Class: 195
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 208
       Script: {instanceID: 0}
@@ -337,6 +389,57 @@ ScriptsOnlyBuild:
     - Class: 258
       Script: {instanceID: 0}
     - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Scenes/MainMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 16614}
+    - Class: 114
+      Script: {instanceID: 16616}
+    - Class: 114
+      Script: {instanceID: 16668}
+    - Class: 114
+      Script: {instanceID: 17792}
+    - Class: 114
+      Script: {instanceID: 18012}
+    - Class: 114
+      Script: {instanceID: 20832}
+    - Class: 114
+      Script: {instanceID: 21716}
+    - Class: 114
+      Script: {instanceID: 23104}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -527,7 +630,7 @@ ScriptsOnlyBuild:
     className: DebugViewing
   - hash:
       serializedVersion: 2
-      Hash: a6b856da5c65a7be28efe8ca4a232adf
+      Hash: 3978255c2aa93348c465afe01f3cd528
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ManGun
@@ -821,7 +924,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerExitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 0243f0ac7de81f92e60baa6b5d6c5082
+      Hash: 00fd8694f0a617f3bbf001aeb3f5d349
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerController
@@ -1187,7 +1290,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: e2349793f4745cb3f0cbf3362f2e684f
+      Hash: d4b265627fa1befd408ba0bddef07892
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Hostage
@@ -1493,7 +1596,7 @@ ScriptsOnlyBuild:
     className: opencloseDoor1
   - hash:
       serializedVersion: 2
-      Hash: 68271b4857e033a7fbf72f18940d504d
+      Hash: b6532cf4495056a8521248f791337763
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ManKnife
@@ -1523,7 +1626,7 @@ ScriptsOnlyBuild:
     className: PaymentsCatalogYG
   - hash:
       serializedVersion: 2
-      Hash: 93e426bc2ea07f820eacb7f069bf9d07
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MenuManager
@@ -1659,8 +1762,15 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 03d91c8515937bc4a2adc0944ed29c9c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: UIManager
   platform: 20
   scenePathNames:
   - Assets/Scenes/Level_1.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: D:/Vladimir/BukunGames/3D_Survival/20
+  - Assets/Scenes/MainMenu.unity
+  playerPath: D:/Vladimir/BukunGames/3D_Survival/21

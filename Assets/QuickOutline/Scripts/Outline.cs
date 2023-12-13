@@ -93,7 +93,7 @@ public class Outline : MonoBehaviour {
     outlineFillMaterial.name = "OutlineFill (Instance)";
 
     // Retrieve or generate smooth normals
-    LoadSmoothNormals();
+    //LoadSmoothNormals();
 
     // Apply material properties immediately
     needsUpdate = true;
@@ -209,9 +209,6 @@ public class Outline : MonoBehaviour {
       if (!registeredMeshes.Add(skinnedMeshRenderer.sharedMesh)) {
         continue;
       }
-
-      // Clear UV3
-      skinnedMeshRenderer.sharedMesh.uv4 = new Vector2[skinnedMeshRenderer.sharedMesh.vertexCount];
 
       // Combine submeshes
       CombineSubmeshes(skinnedMeshRenderer.sharedMesh, skinnedMeshRenderer.sharedMaterials);

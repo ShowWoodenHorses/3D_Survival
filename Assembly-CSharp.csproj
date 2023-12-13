@@ -144,12 +144,12 @@
     <None Include="Assets\WebGLTemplates\LICENSE.txt" />
     <None Include="Assets\YandexGame\Readme.txt" />
     <None Include="Assets\QuickOutline\Readme.txt" />
-    <None Include="Assets\Polygon zombie package\ReadMe.txt" />
+    <None Include="Assets\Import\Polygon zombie package\ReadMe.txt" />
     <None Include="Assets\YandexGame\Fonts\LICENSE.txt" />
     <None Include="Assets\YandexGame\ScriptsYG\UnityToolbag-main\Notices.txt" />
     <None Include="Assets\YandexGame\Third-Party Notices.txt" />
-    <None Include="Assets\Blood decal pack\readme.txt" />
-    <None Include="Assets\SkySeries Freebie\Hdri setup.txt" />
+    <None Include="Assets\Import\Blood decal pack\readme.txt" />
+    <None Include="Assets\Import\SkySeries Freebie\Hdri setup.txt" />
     <None Include="Assets\QuickOutline\Resources\Shaders\OutlineFill.shader" />
     <None Include="Assets\YandexGame\ScriptsYG\UnityToolbag-main\LICENSE.txt" />
   </ItemGroup>
