@@ -130,6 +130,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\Language Translation\LanguageYG.cs" />
     <Compile Include="Assets\Brick Project Studio\_BPS Basic Assets\Common\Scripts and Animations\Drawer\X Axis\Drawer_Pull_X.cs" />
     <Compile Include="Assets\Scripts\Enemy\HostageZoneTrigger.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Brick Project Studio\Apartment Kit\Common\Scripts &amp; Animation\OvenOpen\OvenFlip.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\NewResultLBExample.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\CustomRBT\BannerYG.cs" />

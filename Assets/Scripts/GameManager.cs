@@ -14,8 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _enemyGun;
 
     //Positions
-    [SerializeField] private List<Transform> positionsEnemyKnife = new List<Transform>();
-    [SerializeField] private List<Transform> positionsEnemyGun = new List<Transform>();
+    public List<Transform> positionsEnemyKnife = new List<Transform>();
+    public List<Transform> positionsEnemyGun = new List<Transform>();
 
     private void Start()
     {

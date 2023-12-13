@@ -50,9 +50,9 @@ public class ManKnife : EnemyController
             _anim.SetBool("Walk", true);
             Patrul();
         }
-        else if (distanceToPlayer < _radiusAttack && _agent.isStopped == false)
+        else if (distanceToPlayer < _radiusAttack && !_isCooldownAttack && _agent.isStopped == false)
         {
-            Attack();
+            StartCoroutine(Shoot());
             _anim.SetTrigger("Attack");
         }
     }

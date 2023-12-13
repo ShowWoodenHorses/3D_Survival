@@ -19,6 +19,9 @@ public abstract class EnemyController : MonoBehaviour, IDamagable
     [SerializeField] private protected Animator _anim;
     [SerializeField] private protected NavMeshAgent _agent;
 
+    public delegate void EnemyAction();
+    public static EnemyAction enemyDie;
+
     [SerializeField] private int _startHealth;
     private protected int _health;
     public int Health
@@ -52,6 +55,7 @@ public abstract class EnemyController : MonoBehaviour, IDamagable
         _anim.SetTrigger("Death");
         _collider.enabled = false;
         Destroy(gameObject, 2f);
+        enemyDie();
     }
 
     public void TakeDamage(int damage)

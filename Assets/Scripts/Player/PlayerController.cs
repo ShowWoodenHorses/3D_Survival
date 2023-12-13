@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour, IDamagable
     [SerializeField] private float _speedRotate;
     [SerializeField] private float _jumpForce;
 
+    [SerializeField] private GameObject _bloodPrefab;
+
     [SerializeField] private Transform _groundCheckerTransform;
     [SerializeField] private LayerMask _layerMask;
 
@@ -124,6 +126,8 @@ public class PlayerController : MonoBehaviour, IDamagable
     public void TakeDamage(int damage)
     {
         Health -= damage;
+        GameObject blood = Instantiate(_bloodPrefab, transform.position, transform.rotation) as GameObject;
+        Destroy(blood?.gameObject, 2f);
     }
 
     public void Die()

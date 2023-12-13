@@ -13,6 +13,7 @@ public class Hostage : MonoBehaviour, IDamagable
     [SerializeField] private protected Transform _playerPos;
     [SerializeField] private protected Animator _anim;
     [SerializeField] private protected NavMeshAgent _agent;
+    [SerializeField] private protected GameObject _bloodPrefab;
 
     public delegate void hostageActionZone();
     public delegate void hostageActionDie();
@@ -85,6 +86,8 @@ public class Hostage : MonoBehaviour, IDamagable
     public void TakeDamage(int damage)
     {
         Health -= damage;
+        GameObject blood = Instantiate(_bloodPrefab, transform.position, transform.rotation) as GameObject;
+        Destroy(blood?.gameObject, 2f);
     }
 
     public void Die()

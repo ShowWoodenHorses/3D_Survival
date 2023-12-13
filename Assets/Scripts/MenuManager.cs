@@ -7,9 +7,9 @@ public class MenuManager : MonoBehaviour
     public GameObject GameOverObj;
     public GameObject GameWinObj;
 
-    [SerializeField] private ContainerHostage _containerHostage;
-    [SerializeField] private int _countHostageForWin;
-    [SerializeField] private int _count;
+    public ContainerHostage containerHostage;
+    public int countHostageForWin;
+    public int countFreeHostage;
 
 
     private void OnEnable()
@@ -24,14 +24,14 @@ public class MenuManager : MonoBehaviour
         Hostage.hostageDie -= GameOver;
         PlayerController.playerDie -= GameOver;
     }
-    private void Start()
+    private void Awake()
     {
-        _countHostageForWin = _containerHostage.listHostage.Count;
+        countHostageForWin = containerHostage.listHostage.Count;
     }
 
     private void Update()
     {
-        if (_count == _countHostageForWin)
+        if (countFreeHostage == countHostageForWin)
         {
             GameWin();
         }
@@ -39,7 +39,7 @@ public class MenuManager : MonoBehaviour
 
     private void Add()
     {
-        _count++;
+        countFreeHostage++;
     }
 
     private void GameOver()
