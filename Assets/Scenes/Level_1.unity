@@ -82750,6 +82750,7 @@ MonoBehaviour:
   _isCooldown: 0
   _offset: 50
   _poolController: {fileID: 2098255548}
+  _poolEffectShoot: {fileID: 2098255550}
 --- !u!114 &1774170320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98794,6 +98795,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2098255549}
   - component: {fileID: 2098255548}
+  - component: {fileID: 2098255550}
   m_Layer: 0
   m_Name: BulletPool
   m_TagString: Untagged
@@ -98814,7 +98816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 8147328900615496587, guid: 34ddbcfd06898f64582b3b445a5f7c2d, type: 3}
-  sizePool: 20
+  sizePool: 7
   objectsPool: []
 --- !u!4 &2098255549
 Transform:
@@ -98831,6 +98833,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2098255550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098255547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee80f8c16d828f846a0a864711a3a887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8186226624072779844, guid: 4d18c4443e8cc8e40b40430c744adc47, type: 3}
+  sizePool: 7
+  objectsPool: []
 --- !u!43 &2103481838
 Mesh:
   m_ObjectHideFlags: 0

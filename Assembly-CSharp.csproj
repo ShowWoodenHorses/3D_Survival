@@ -58,6 +58,7 @@
     <Analyzer Include="D:\Vladimir\Unity2022\Unity 2022.3.5f1\2022.3.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\RecyclableScrollRect.cs" />
     <Compile Include="Assets\Scripts\ContainerPositions.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\PromptYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ForVisualScriptYG.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\YandexMetrica\JsonUtils.cs" />
     <Compile Include="Assets\Brick Project Studio\_BPS Basic Assets\Common\Scripts and Animations\Doors\opencloseDoor1.cs" />
     <Compile Include="Assets\YandexGame\DebuggingMode\Scripts\DebuggingModeYG.cs" />
+    <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\Interfaces\IRecyclableScrollRectDataSource.cs" />
     <Compile Include="Assets\Scripts\Player\CommandController.cs" />
     <Compile Include="Assets\Brick Project Studio\_BPS Basic Assets\Common\Scripts and Animations\Drawer\Z Axis\Drawer_Pull_Z.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\PaymentsCatalogYG.cs" />
@@ -103,13 +105,16 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\YandexGame\WorkingData\SavesYG.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\RewardedAd.cs" />
+    <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\Recycling System\RecyclingSystem.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ActivityOnAuthorizationYG.cs" />
+    <Compile Include="Assets\Scripts\Player\EffectShoot.cs" />
     <Compile Include="Assets\Brick Project Studio\Apartment Kit\Common\Scripts &amp; Animation\Z Axis -1\Drawer_Pull_Zopp.cs" />
     <Compile Include="Assets\Scripts\ForTexture\AutoTiling.cs" />
     <Compile Include="Assets\Brick Project Studio\_BPS Basic Assets\Common\Scripts and Animations\Windows\opencloseWindow1.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language Translation\UtilsLang.cs" />
     <Compile Include="Assets\Scripts\Bullet\ObjectPoolController.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ImageLoadYG.cs" />
+    <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\Interfaces\ICell.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\YandexGame.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Inside\ConfigYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboard\LBPlayerDataYG.cs" />
@@ -131,12 +136,16 @@
     <Compile Include="Assets\Brick Project Studio\_BPS Basic Assets\Common\Scripts and Animations\Drawer\X Axis\Drawer_Pull_X.cs" />
     <Compile Include="Assets\Scripts\Enemy\HostageZoneTrigger.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\Recycling System\HorizontalRecyclingSystem.cs" />
     <Compile Include="Assets\Brick Project Studio\Apartment Kit\Common\Scripts &amp; Animation\OvenOpen\OvenFlip.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\NewResultLBExample.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\CustomRBT\BannerYG.cs" />
+    <Compile Include="Assets\Scripts\Bullet\PoolEffectShoot.cs" />
     <Compile Include="Assets\Scripts\Enemy\ManGun.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\DebugViewing.cs" />
+    <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\Recycling System\VerticalRecyclingSystem.cs" />
     <Compile Include="Assets\Brick Project Studio\_BPS Basic Assets\Common\Scripts and Animations\Doors\opencloseStallDoor.cs" />
+    <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\Utils\UIExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\QuickOutline\Resources\Shaders\OutlineMask.shader" />

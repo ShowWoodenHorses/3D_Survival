@@ -15,6 +15,7 @@ public class GunPlayer : MonoBehaviour
     [SerializeField] private float _offset;
 
     [SerializeField] private ObjectPoolController _poolController;
+    [SerializeField] private PoolEffectShoot _poolEffectShoot;
 
     private Animator _anim;
     private void Awake()
@@ -76,6 +77,18 @@ public class GunPlayer : MonoBehaviour
             bullet.transform.position = _bulletPos.position;
             bullet.transform.rotation = _bulletPos.rotation;
             bullet.SetActive(true);
+        }
+        GameObject effectShoot = _poolEffectShoot.GetObjectFromPool();
+        if (effectShoot != null)
+        {
+            EffectShoot effect = effectShoot.GetComponent<EffectShoot>();
+            if (effect != null)
+            {
+                effect.Initialize(_poolEffectShoot);
+            }
+            effectShoot.transform.position = _bulletPos.position;
+            effectShoot.transform.rotation = _bulletPos.rotation;
+            effectShoot.SetActive(true);
         }
     }
 }

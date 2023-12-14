@@ -7,7 +7,7 @@ public class ObjectPoolController : MonoBehaviour
 {
 
     public GameObject prefab;
-    [SerializeField] private int sizePool;
+    [SerializeField] private protected int sizePool;
     public List<GameObject> objectsPool;
 
     private void Start()
