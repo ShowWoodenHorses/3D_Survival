@@ -15687,6 +15687,7 @@ MonoBehaviour:
   _playerTransform: {fileID: 543450653642720263}
   _containerPositionsForPatrul: {fileID: 5180330644790546401}
   _poolController: {fileID: 2098255548}
+  _poolEffectShoot: {fileID: 2098255550}
   _containerHostage: {fileID: 100562661}
   _enemyKnife: {fileID: 6415623479133042217, guid: 6a4a8b90c18c2c84ba89ab7d8b51b6b9, type: 3}
   _enemyGun: {fileID: 2258596617078957573, guid: 33ccd8c52ce4058498bc167766710e59, type: 3}

@@ -9,6 +9,7 @@ public class ManGun : EnemyController
     [SerializeField] private GameObject _bulletPrefab;
 
     [SerializeField] private ObjectPoolController _poolController;
+    [SerializeField] private PoolEffectShoot _poolEffectShoot;
     private float _startSpeed;
 
     [SerializeField] private LayerMask _layerMask;
@@ -21,10 +22,11 @@ public class ManGun : EnemyController
         _startSpeed = _agent.speed;
     }
 
-    public void Initialize(Transform playerPos, ObjectPoolController poolController)
+    public void Initialize(Transform playerPos, ObjectPoolController poolController, PoolEffectShoot poolEffectShoot)
     {
         _playerPos = playerPos;
         _poolController = poolController;
+        _poolEffectShoot = poolEffectShoot;
     }
 
     public void Update()
@@ -71,6 +73,18 @@ public class ManGun : EnemyController
             bullet.transform.position = _bulletPos.position;
             bullet.transform.rotation = transform.rotation;
             bullet.SetActive(true);
+        }
+        GameObject effectShoot = _poolEffectShoot.GetObjectFromPool();
+        if (effectShoot != null)
+        {
+            EffectShoot effect = effectShoot.GetComponent<EffectShoot>();
+            if (effect != null)
+            {
+                effect.Initialize(_poolEffectShoot);
+            }
+            effectShoot.transform.position = _bulletPos.position;
+            effectShoot.transform.rotation = _bulletPos.rotation;
+            effectShoot.SetActive(true);
         }
         _agent.speed = _startSpeed;
         _isCooldownAttack = false;

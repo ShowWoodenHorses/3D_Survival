@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform _playerTransform;
     [SerializeField] private ContainerPositions _containerPositionsForPatrul;
     [SerializeField] private ObjectPoolController _poolController;
+    [SerializeField] private PoolEffectShoot _poolEffectShoot;
     [SerializeField] private ContainerHostage _containerHostage;
 
     //Enemy
@@ -31,7 +32,7 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < positionsEnemyGun.Count; i++)
         {
             ManGun manGun = _enemyGun.GetComponent<ManGun>();
-            manGun?.Initialize(_playerTransform, _poolController);
+            manGun?.Initialize(_playerTransform, _poolController, _poolEffectShoot);
             Instantiate(_enemyGun, positionsEnemyGun[i].position, Quaternion.identity);
         }
 
