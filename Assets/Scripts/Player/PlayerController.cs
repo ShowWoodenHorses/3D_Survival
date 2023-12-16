@@ -58,10 +58,10 @@ public class PlayerController : MonoBehaviour, IDamagable
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            JumpPlayer();
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    JumpPlayer();
+        //}
     }
 
     void FixedUpdate()

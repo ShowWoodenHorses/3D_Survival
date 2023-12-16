@@ -365,6 +365,8 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"D:/Vladimir/Unity2022/Unity 2022.3.5f1/2022.3.5f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/Vladimir/Unity2022/Unity 2022.3.5f1/2022.3.5f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs"
+"Assets/JMO Assets/WarFX/Editor/CFX_SpawnSystemEditor.cs"
 "Assets/Recyclable Scroll Rect/Main/Editor/RecyclableScrollRectEditor.cs"
 "Assets/Recyclable Scroll Rect/Main/Editor/RecyclableScrollViewEditorTool.cs"
 "Assets/YandexGame/ScriptsYG/CustomRBT/Editor/BannerYGEditor.cs"

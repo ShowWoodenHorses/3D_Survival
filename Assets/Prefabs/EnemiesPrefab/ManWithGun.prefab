@@ -891,6 +891,7 @@ MonoBehaviour:
   _bulletPos: {fileID: 3474068140004638424}
   _bulletPrefab: {fileID: 8147328900615496587, guid: 34ddbcfd06898f64582b3b445a5f7c2d, type: 3}
   _poolController: {fileID: 0}
+  _poolEffectShoot: {fileID: 0}
   _layerMask:
     serializedVersion: 2
     m_Bits: 128
