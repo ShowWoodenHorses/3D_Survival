@@ -23,7 +23,7 @@ public abstract class EnemyController : MonoBehaviour, IDamagable
     public static EnemyAction enemyDie;
 
     [SerializeField] private int _startHealth;
-    private protected int _health;
+    [SerializeField] private protected int _health;
     public int Health
     {
         get
@@ -60,13 +60,10 @@ public abstract class EnemyController : MonoBehaviour, IDamagable
 
     public void TakeDamage(int damage)
     {
+        Debug.Log("Damage");
         Health -= damage;
         GameObject blood = Instantiate(_bloodPrefab, transform.position, transform.rotation) as GameObject;
         Destroy(blood?.gameObject, 2f);
     }
 
-    public virtual void Attack()
-    {
-
-    }
 }

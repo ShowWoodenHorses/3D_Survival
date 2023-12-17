@@ -1,18 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.AI;
 
 public class ManGun : EnemyController
 {
-    [SerializeField] private Transform _bulletPos;
-    [SerializeField] private GameObject _bulletPrefab;
+    [SerializeField] private protected Transform _bulletPos;
+    [SerializeField] private protected GameObject _bulletPrefab;
 
-    [SerializeField] private ObjectPoolController _poolController;
-    [SerializeField] private PoolEffectShoot _poolEffectShoot;
-    private float _startSpeed;
+    [SerializeField] private protected ObjectPoolController _poolController;
+    [SerializeField] private protected PoolEffectShoot _poolEffectShoot;
+    [SerializeField] private protected float _startSpeed;
 
-    [SerializeField] private LayerMask _layerMask;
+    [SerializeField] private protected LayerMask _layerMask;
+
+    [SerializeField] private StateMachineEnemy _SM;
+    private IdleStateEnemy _idleStateEnemy;
+    private RunStateEnemy _runStateEnemy;
+    private AttackStateEnemy _attackStateEnemy;
+    private DeathStateEnemy _deathStateEnemy;
+
+    [SerializeField] private protected bool _isRange;
+    [SerializeField] private protected bool _hit;
+
+
     public void Awake()
     {
         _rb = GetComponent<Rigidbody>();
@@ -20,6 +30,22 @@ public class ManGun : EnemyController
         _anim = GetComponent<Animator>();
         _agent = GetComponent<NavMeshAgent>();
         _startSpeed = _agent.speed;
+    }
+
+    private void Start()
+    {
+        _SM = new StateMachineEnemy();
+        _idleStateEnemy = new IdleStateEnemy(this, _anim,_agent,_playerPos,_radiusAttack,
+      _isRange, _hit, _layerMask);
+        _runStateEnemy = new RunStateEnemy(_playerPos, _anim, _agent);
+        _attackStateEnemy = new AttackStateEnemy(this, _playerPos,_bulletPos, _poolController,
+            _poolEffectShoot, _agent,_isCooldownAttack,_cooldownTime, _startSpeed, _anim);
+        _deathStateEnemy = new DeathStateEnemy(this,_agent,_anim,_collider,
+            _radiusDetected,_isCooldownAttack);
+        {
+
+        };
+        _SM.Initialize(_idleStateEnemy);
     }
 
     public void Initialize(Transform playerPos, ObjectPoolController poolController, PoolEffectShoot poolEffectShoot)
@@ -31,63 +57,20 @@ public class ManGun : EnemyController
 
     public void Update()
     {
-        _anim.SetFloat("speed", _agent.velocity.magnitude);
+        _SM.CurreantStateEnemy.Update();
         float distanceToPlayer = Vector3.Distance(transform.position, _playerPos.position);
-        bool isRange = distanceToPlayer > _radiusAttack;
-        bool hit = Physics.SphereCast(transform.position, _radiusAttack,
+        _isRange = distanceToPlayer > _radiusAttack;
+        _hit = Physics.SphereCast(transform.position, _radiusAttack,
             transform.TransformDirection(Vector3.forward),
             out RaycastHit hitinfo, _layerMask);
 
-        if (isRange && !_agent.isStopped && Health > 0)
+        if (_isRange)
         {
-            _anim.SetBool("isAttack", false);
-            Move();
+            _SM.ChangeState(_runStateEnemy);
         }
-        else if (hit && !_agent.isStopped && !_isCooldownAttack && Health > 0)
+        else if (_hit)
         {
-            _agent.speed = 0f;
-            Vector3 direction = _playerPos.position - transform.position;
-            transform.rotation = Quaternion.LookRotation(direction);
-            _anim.SetBool("isAttack", true);
-            StartCoroutine(Shoot());
+            _SM.ChangeState(_attackStateEnemy);
         }
-    }
-
-    public void Move()
-    {
-        _agent.destination = _playerPos.position;
-    }
-
-    private IEnumerator Shoot()
-    {
-        _isCooldownAttack = true;
-        yield return new WaitForSeconds(_cooldownTime);
-        GameObject bullet = _poolController.GetObjectFromPool();
-        if (bullet != null)
-        {
-            BulletController bulletController = bullet.GetComponent<BulletController>();
-            if (bulletController != null)
-            {
-                bulletController.Initialize(_poolController, _bulletPos.forward);
-            }
-            bullet.transform.position = _bulletPos.position;
-            bullet.transform.rotation = transform.rotation;
-            bullet.SetActive(true);
-        }
-        GameObject effectShoot = _poolEffectShoot.GetObjectFromPool();
-        if (effectShoot != null)
-        {
-            EffectShoot effect = effectShoot.GetComponent<EffectShoot>();
-            if (effect != null)
-            {
-                effect.Initialize(_poolEffectShoot);
-            }
-            effectShoot.transform.position = _bulletPos.position;
-            effectShoot.transform.rotation = _bulletPos.rotation;
-            effectShoot.SetActive(true);
-        }
-        _agent.speed = _startSpeed;
-        _isCooldownAttack = false;
-        _agent.isStopped = false;
     }
 }

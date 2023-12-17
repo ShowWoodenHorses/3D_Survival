@@ -71,10 +71,6 @@ public class ManKnife : EnemyController
         }
     }
 
-    public override void Attack()
-    {
-        StartCoroutine(Shoot());
-    }
 
     private IEnumerator Shoot()
     {
