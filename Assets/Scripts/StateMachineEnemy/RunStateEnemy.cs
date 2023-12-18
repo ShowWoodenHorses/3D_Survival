@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 public class RunStateEnemy : StateEnemy
 {
@@ -17,7 +16,6 @@ public class RunStateEnemy : StateEnemy
     public override void Enter()
     {
         base.Enter();
-        _anim.SetBool("isAttack", false);
     }
     public override void Exit()
     {

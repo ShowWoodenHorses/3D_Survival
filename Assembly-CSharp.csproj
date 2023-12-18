@@ -82,7 +82,6 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\ViewingAdsYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\YandexMetrica\YandexMetrica.cs" />
     <Compile Include="Assets\Scripts\StateMachineEnemy\DeathStateEnemy.cs" />
-    <Compile Include="Assets\Scripts\StateMachineEnemy\AttackStateEnemy.cs" />
     <Compile Include="Assets\Brick Project Studio\Apartment Kit\Common\Scripts &amp; Animation\TableFlip\TableFlipL.cs" />
     <Compile Include="Assets\Scripts\Enemy\Hostage.cs" />
     <Compile Include="Assets\Scripts\BulletController.cs" />
@@ -95,6 +94,7 @@
     <Compile Include="Assets\Scripts\StateMachineEnemy\StateMachineEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemy\BaseLogicEnemy.cs" />
     <Compile Include="Assets\Brick Project Studio\Apartment Kit\Common\Scripts &amp; Animation\Slide\opencloseSlide.cs" />
+    <Compile Include="Assets\Scripts\StateMachineEnemy\MeleeAttackStateEnemy.cs" />
     <Compile Include="Assets\Brick Project Studio\_BPS Basic Assets\Common\Scripts and Animations\First Person Player\SceneSwitchGen.cs" />
     <Compile Include="Assets\Brick Project Studio\_BPS Basic Assets\Common\Scripts and Animations\Doors\opencloseDoor.cs" />
     <Compile Include="Assets\Brick Project Studio\_BPS Basic Assets\Common\Scripts and Animations\Windows\opencloseWindow.cs" />
@@ -105,6 +105,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\PurchaseYG.cs" />
     <Compile Include="Assets\Brick Project Studio\Apartment Kit\Common\Scripts &amp; Animation\Closet\ClosetopencloseDoor.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
+    <Compile Include="Assets\Scripts\StateMachineEnemy\RangedAttackStateEnemy.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\LanguageExample.cs" />
     <Compile Include="Assets\Scripts\StateMachineEnemy\RunStateEnemy.cs" />
     <Compile Include="Assets\Scripts\Player\SetMaterialToInvisible.cs" />
@@ -116,6 +117,7 @@
     <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\Recycling System\RecyclingSystem.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ActivityOnAuthorizationYG.cs" />
     <Compile Include="Assets\Scripts\Player\EffectShoot.cs" />
+    <Compile Include="Assets\Scripts\StateMachineEnemy\PatrulStateEnemy.cs" />
     <Compile Include="Assets\Brick Project Studio\Apartment Kit\Common\Scripts &amp; Animation\Z Axis -1\Drawer_Pull_Zopp.cs" />
     <Compile Include="Assets\Scripts\ForTexture\AutoTiling.cs" />
     <Compile Include="Assets\Brick Project Studio\_BPS Basic Assets\Common\Scripts and Animations\Windows\opencloseWindow1.cs" />

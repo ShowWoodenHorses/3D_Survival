@@ -1,18 +1,19 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class ManKnife : EnemyController
 {
-
-    [SerializeField] private List<Transform> _positionsForPatrul = new List<Transform>();
-    private int _indexMoveForPatrul = 0;
-
     [SerializeField] private ContainerPositions _containerPositions;
 
-    public void Awake()
+    private StateMachineEnemy _SM;
+    private RunStateEnemy _runStateEnemy;
+    private PatrulStateEnemy _patrulStateEnemy;
+    private MeleeAttackStateEnemy _meleeAttackStateEnemy;
+
+    public override void Awake()
     {
+        base.Awake();
         _rb = GetComponent<Rigidbody>();
         _collider = GetComponent<Collider>();
         _anim = GetComponent<Animator>();
@@ -27,56 +28,31 @@ public class ManKnife : EnemyController
 
     private void Start()
     {
-        for (int i = 0; i < _containerPositions.ContainerWithPositionsForPatrul.Count; i++)
-        {
-            _positionsForPatrul.Add(_containerPositions.ContainerWithPositionsForPatrul[i]);
-        }
-        _agent.destination = _positionsForPatrul[Random.Range(0, _positionsForPatrul.Count)].position;
-
+        _SM = new StateMachineEnemy();
+        _runStateEnemy = new RunStateEnemy(_playerPos, _anim, _agent);
+        _patrulStateEnemy = new PatrulStateEnemy(_agent,_anim, _containerPositions);
+        _meleeAttackStateEnemy = new MeleeAttackStateEnemy(this, _anim, _playerPos,
+            _cooldownTime, _damage);
+        _SM.Initialize(_patrulStateEnemy);
+        _patrulStateEnemy.Init();
     }
 
     public void Update()
     {
+        _SM.CurreantStateEnemy.Update();
         float distanceToPlayer = Vector3.Distance(transform.position, _playerPos.position);
         if (distanceToPlayer <= _radiusDetected && distanceToPlayer >= _radiusAttack 
                 && _agent.isStopped == false)
         {
-            _anim.SetBool("Walk", false);
-            _anim.SetFloat("speed", _agent.velocity.magnitude);
-            Move();
+            _SM.ChangeState(_runStateEnemy);
         }
         else if (distanceToPlayer > _radiusDetected && _agent.isStopped == false)
         {
-            _anim.SetBool("Walk", true);
-            Patrul();
+            _SM.ChangeState(_patrulStateEnemy);
         }
         else if (distanceToPlayer < _radiusAttack && !_isCooldownAttack && _agent.isStopped == false)
         {
-            StartCoroutine(Shoot());
-            _anim.SetTrigger("Attack");
+            _SM.ChangeState(_meleeAttackStateEnemy);
         }
-    }
-
-    public void Move()
-    {
-        _agent.destination = _playerPos.position;
-    }
-
-    void Patrul()
-    {
-        if (_agent.remainingDistance < 1f) 
-        {
-            _indexMoveForPatrul = Random.Range(0, _positionsForPatrul.Count);
-            _agent.destination = _positionsForPatrul[_indexMoveForPatrul].position;
-        }
-    }
-
-
-    private IEnumerator Shoot()
-    {
-        _isCooldownAttack = true;
-        yield return new WaitForSeconds(_cooldownTime);
-        _playerPos.GetComponent<IDamagable>().TakeDamage(_damage);
-        _isCooldownAttack = false;
     }
 }

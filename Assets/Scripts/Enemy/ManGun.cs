@@ -16,15 +16,16 @@ public class ManGun : EnemyController
     [SerializeField] private StateMachineEnemy _SM;
     private IdleStateEnemy _idleStateEnemy;
     private RunStateEnemy _runStateEnemy;
-    private AttackStateEnemy _attackStateEnemy;
+    private RangedAttackStateEnemy _RangedAttackStateEnemy;
     private DeathStateEnemy _deathStateEnemy;
 
     [SerializeField] private protected bool _isRange;
     [SerializeField] private protected bool _hit;
 
 
-    public void Awake()
+    public override void Awake()
     {
+        base.Awake();
         _rb = GetComponent<Rigidbody>();
         _collider = GetComponent<Collider>();
         _anim = GetComponent<Animator>();
@@ -38,7 +39,7 @@ public class ManGun : EnemyController
         _idleStateEnemy = new IdleStateEnemy(this, _anim,_agent,_playerPos,_radiusAttack,
       _isRange, _hit, _layerMask);
         _runStateEnemy = new RunStateEnemy(_playerPos, _anim, _agent);
-        _attackStateEnemy = new AttackStateEnemy(this, _playerPos,_bulletPos, _poolController,
+        _RangedAttackStateEnemy = new RangedAttackStateEnemy(this, _playerPos,_bulletPos, _poolController,
             _poolEffectShoot, _agent,_isCooldownAttack,_cooldownTime, _startSpeed, _anim);
         _deathStateEnemy = new DeathStateEnemy(this,_agent,_anim,_collider,
             _radiusDetected,_isCooldownAttack);
@@ -66,11 +67,12 @@ public class ManGun : EnemyController
 
         if (_isRange)
         {
+            _anim.SetBool("isAttack", false);
             _SM.ChangeState(_runStateEnemy);
         }
         else if (_hit)
         {
-            _SM.ChangeState(_attackStateEnemy);
+            _SM.ChangeState(_RangedAttackStateEnemy);
         }
     }
 }

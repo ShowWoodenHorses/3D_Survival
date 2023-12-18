@@ -5,7 +5,7 @@ public class BaseLogicEnemy : MonoBehaviour
     private StateMachineEnemy _SM;
     private IdleStateEnemy _idleStateEnemy;
     private RunStateEnemy _runStateEnemy;
-    private AttackStateEnemy _attackStateEnemy;
+    private RangedAttackStateEnemy _attackStateEnemy;
 
     //private void Start()
     //{
