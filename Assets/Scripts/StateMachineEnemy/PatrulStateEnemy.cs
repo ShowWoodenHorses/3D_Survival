@@ -29,7 +29,6 @@ public class PatrulStateEnemy : StateEnemy
 
     public override void Enter()
     {
-        Debug.Log("Enter ManKnife");
         _anim.SetBool("Walk", true);
     }
     public override void Exit()

@@ -44,6 +44,10 @@ public abstract class EnemyController : MonoBehaviour, IDamagable
     public virtual void Awake()
     {
         _health = _startHealth;
+        _rb = GetComponent<Rigidbody>();
+        _collider = GetComponent<Collider>();
+        _anim = GetComponent<Animator>();
+        _agent = GetComponent<NavMeshAgent>();
     }
 
     public void Die()

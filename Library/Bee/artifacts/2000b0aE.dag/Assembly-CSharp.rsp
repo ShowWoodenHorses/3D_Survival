@@ -391,6 +391,7 @@
 "Assets/Scripts/Enemy/IDamagable.cs"
 "Assets/Scripts/Enemy/ManGun.cs"
 "Assets/Scripts/Enemy/ManKnife.cs"
+"Assets/Scripts/Enemy/ObjectStateInvisible.cs"
 "Assets/Scripts/ForTexture/AutoTiling.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/MenuManager.cs"

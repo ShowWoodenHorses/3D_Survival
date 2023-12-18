@@ -14,10 +14,6 @@ public class ManKnife : EnemyController
     public override void Awake()
     {
         base.Awake();
-        _rb = GetComponent<Rigidbody>();
-        _collider = GetComponent<Collider>();
-        _anim = GetComponent<Animator>();
-        _agent = GetComponent<NavMeshAgent>();
     }
 
     public void Initialize(Transform transformPlayer, ContainerPositions containerPositions)

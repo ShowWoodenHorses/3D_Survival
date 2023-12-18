@@ -17,7 +17,6 @@ public class ManGun : EnemyController
     private IdleStateEnemy _idleStateEnemy;
     private RunStateEnemy _runStateEnemy;
     private RangedAttackStateEnemy _RangedAttackStateEnemy;
-    private DeathStateEnemy _deathStateEnemy;
 
     [SerializeField] private protected bool _isRange;
     [SerializeField] private protected bool _hit;
@@ -26,10 +25,6 @@ public class ManGun : EnemyController
     public override void Awake()
     {
         base.Awake();
-        _rb = GetComponent<Rigidbody>();
-        _collider = GetComponent<Collider>();
-        _anim = GetComponent<Animator>();
-        _agent = GetComponent<NavMeshAgent>();
         _startSpeed = _agent.speed;
     }
 
@@ -41,11 +36,6 @@ public class ManGun : EnemyController
         _runStateEnemy = new RunStateEnemy(_playerPos, _anim, _agent);
         _RangedAttackStateEnemy = new RangedAttackStateEnemy(this, _playerPos,_bulletPos, _poolController,
             _poolEffectShoot, _agent,_isCooldownAttack,_cooldownTime, _startSpeed, _anim);
-        _deathStateEnemy = new DeathStateEnemy(this,_agent,_anim,_collider,
-            _radiusDetected,_isCooldownAttack);
-        {
-
-        };
         _SM.Initialize(_idleStateEnemy);
     }
 
