@@ -1,2 +1,2 @@
-Build path: D:/Vladimir/BukunGames/3D_Survival/26
-Build number: 45
+Build path: D:/Vladimir/BukunGames/3D_Survival/28
+Build number: 47

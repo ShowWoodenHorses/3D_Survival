@@ -779,7 +779,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2258596617078957573}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: fc13b0b7f1fc8d846897113df85eda1b, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 5e71cc1509a29194da9a03430d69ef44, type: 3}
   m_Controller: {fileID: 9100000, guid: 5f8fbd56d66160d41a06abcd5649ad9f, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
@@ -888,13 +888,17 @@ MonoBehaviour:
   _anim: {fileID: 0}
   _agent: {fileID: 0}
   _startHealth: 3
+  _health: 0
   _bulletPos: {fileID: 3474068140004638424}
   _bulletPrefab: {fileID: 8147328900615496587, guid: 34ddbcfd06898f64582b3b445a5f7c2d, type: 3}
   _poolController: {fileID: 0}
   _poolEffectShoot: {fileID: 0}
+  _startSpeed: 0
   _layerMask:
     serializedVersion: 2
     m_Bits: 128
+  _isRange: 0
+  _hit: 0
 --- !u!114 &3963581812133843726
 MonoBehaviour:
   m_ObjectHideFlags: 0
