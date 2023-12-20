@@ -20,7 +20,6 @@ public class PatrulStateEnemy : StateEnemy
     {
         for (int i = 0; i < _containerPositions.ContainerWithPositionsForPatrul.Count; i++)
         {
-            Debug.Log(_containerPositions.ContainerWithPositionsForPatrul[i]);
             _positionsForPatrul.Add(_containerPositions.ContainerWithPositionsForPatrul[i]);
         }
         _agent.destination = _positionsForPatrul[Random.Range(0, _positionsForPatrul.Count)].position;

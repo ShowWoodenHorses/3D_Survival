@@ -17,6 +17,8 @@ public class GunPlayer : MonoBehaviour
     [SerializeField] private ObjectPoolController _poolController;
     [SerializeField] private PoolEffectShoot _poolEffectShoot;
 
+    [SerializeField] private bool _isCheckTriggerWeaponInWall;
+
     private Animator _anim;
     private void Awake()
     {
@@ -32,7 +34,9 @@ public class GunPlayer : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && _isCooldown == false)
+        //костыль, чтоб если оружие в стене, то нельзя стрелять
+        _isCheckTriggerWeaponInWall = _bulletPos.GetComponent<CheckTriggerWeaponAndObstacle>().isWeaponInObstacle;
+        if (Input.GetMouseButtonDown(0) && _isCooldown == false && _isCheckTriggerWeaponInWall)
         {
             Shoot();
         }
