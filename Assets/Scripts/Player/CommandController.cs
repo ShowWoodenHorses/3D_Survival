@@ -16,10 +16,10 @@ public class CommandController : MonoBehaviour
     }
     private void Start()
     {
-        for (int i = 0; i < _containerHostage.listHostage.Count; i++)
-        {
-            _hostagesObj.Add(_containerHostage.listHostage[i]);
-        }
+        //for (int i = 0; i < _containerHostage.listHostage.Count; i++)
+        //{
+        //    _hostagesObj.Add(_containerHostage.listHostage[i]);
+        //}
     }
     private void Update()
     {

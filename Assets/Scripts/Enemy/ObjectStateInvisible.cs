@@ -5,6 +5,8 @@ public class ObjectStateInvisible : MonoBehaviour
 {
     private GameObject _roofObject;
 
+    [SerializeField] private bool _destroyRoof;
+
     void Start()
     {
         _roofObject = transform.GetChild(0).gameObject;
@@ -23,7 +25,10 @@ public class ObjectStateInvisible : MonoBehaviour
     {
         if (other.GetComponent<PlayerController>())
         {
-            Destroy(this.gameObject, 3f);
+            if (_destroyRoof)
+                _roofObject.SetActive(true);
+            else if (!_destroyRoof)
+                Destroy(this.gameObject, 3f);
         }
     }
 }

@@ -62,7 +62,7 @@
     <Compile Include="Assets\Recyclable Scroll Rect\Main\Editor\RecyclableScrollRectEditor.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Editor\PostProcessBuild\BuildLog.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Editor\CFX_SpawnSystemEditor.cs" />
-    <Compile Include="Assets\Modern UI Pack\Editor\Scripts\ContextMenu.cs" />
+    <Compile Include="Assets\Import\Modern UI Pack\Editor\Scripts\ContextMenu.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language Translation\Editor\AutoLocalizationMasseWindow.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language Translation\Editor\CSVManager.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language Translation\Editor\FontMasseInstallEditorWindow.cs" />
@@ -82,10 +82,10 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\Editor\PostProcessBuild\ModifyIndexFile\AdWhenLoadingGame.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Editor\PostProcessBuild\ModifyIndexFile\SaveQuitGame.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Editor\Utils\PackageDownloader.cs" />
-    <Compile Include="Assets\Modern UI Pack\Editor\Scripts\InitMUIP.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Editor\Utils\ModificationScripts.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Editor\PostProcessBuild\PostProcessBuild.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language Translation\Editor\TranslationTableEditorWindow.cs" />
+    <Compile Include="Assets\Import\Modern UI Pack\Editor\Scripts\InitMUIP.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language Translation\Editor\LanguageYGEditor.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Editor\PostProcessBuild\ModifyIndexFile\LogoFormat.cs" />
   </ItemGroup>
