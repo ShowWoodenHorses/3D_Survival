@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ContainerHostage _containerHostage;
     [SerializeField] private ContainerBomb _containerBomb;
 
+    [SerializeField] private int _countBomb;
+
     //Enemy
     [SerializeField] private GameObject _enemyKnife;
     [SerializeField] private GameObject _enemyGun;
@@ -18,9 +20,11 @@ public class GameManager : MonoBehaviour
     //Positions
     public List<Transform> positionsEnemyKnife = new List<Transform>();
     public List<Transform> positionsEnemyGun = new List<Transform>();
+    public List<Transform> positionsBomb = new List<Transform>();
 
-    private void Start()
+    private void Awake()
     {
+        _countBomb = _containerBomb.listBomb.Count;
         _playerTransform.GetComponent<CommandController>().Initialize(_containerHostage, _containerBomb);
 
         for (int i = 0; i < positionsEnemyKnife.Count; i++)
@@ -35,6 +39,13 @@ public class GameManager : MonoBehaviour
             ManGun manGun = _enemyGun.GetComponent<ManGun>();
             manGun?.Initialize(_playerTransform, _poolController, _poolEffectShoot);
             Instantiate(_enemyGun, positionsEnemyGun[i].position, Quaternion.identity);
+        }
+
+        for (int i = 0; i < _countBomb; i++)
+        {
+            int randomIndex = Random.Range(0, positionsBomb.Count);
+            _containerBomb.listBomb[i].transform.position = positionsBomb[randomIndex].position;
+            positionsBomb.Remove(positionsBomb[randomIndex]);
         }
 
         for (int i = 0; i < _containerHostage.listHostage.Count; i++)

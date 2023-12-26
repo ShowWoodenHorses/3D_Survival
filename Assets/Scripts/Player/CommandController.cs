@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CommandController : MonoBehaviour
 {
-    [SerializeField] private float _commandDistance;
+    [SerializeField] private float _commandDistanceHostage;
+    [SerializeField] private float _commandDistanceBomb;
     [SerializeField] private LayerMask _layerMask;
 
     [SerializeField] private List<GameObject> _hostagesObj = new List<GameObject>();
@@ -46,7 +47,7 @@ public class CommandController : MonoBehaviour
     {
         for (int i = 0; i < _hostagesObj.Count; i++)
         {
-            if (Vector3.Distance(transform.position, _hostagesObj[i].transform.position) < _commandDistance)
+            if (Vector3.Distance(transform.position, _hostagesObj[i].transform.position) < _commandDistanceHostage)
             {
                 _hostagesObj[i].GetComponent<Hostage>().isFollow = true;
             }
@@ -57,7 +58,7 @@ public class CommandController : MonoBehaviour
     {
         for (int i = 0; i < _bombObj.Count; i++)
         {
-            if (Vector3.Distance(transform.position, _bombObj[i].transform.position) < _commandDistance)
+            if (Vector3.Distance(transform.position, _bombObj[i].transform.position) < _commandDistanceBomb)
             {
                 _bombObj[i].GetComponent<Bomb>().isActiveBomb = false;
             }

@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729986232093137235}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -35,7 +35,7 @@ Transform:
   - {fileID: 1228587698238029908}
   - {fileID: 8881437453477286134}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &5398163780289036609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c26c0bd884793842b141173c559245f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timerBomb: 10
+  _timerBomb: 120
   _timerText: {fileID: 4522082598923907771}
   _effectExplosion: {fileID: 7890097961827564432, guid: c3c8226c26b2f024388e0a3e22be54f2, type: 3}
   _flickerObj: {fileID: 7543246213986846223}
@@ -72,8 +72,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.89830804, y: 0.48235708, z: 0.50485337}
-  m_Center: {x: 0.050845966, y: 0.25882146, z: 0.02181226}
+  m_Size: {x: 0.89830804, y: 1.583626, z: 0.50485337}
+  m_Center: {x: 0.05084598, y: 0.8094559, z: 0.02181226}
 --- !u!1 &1946617253571621098
 GameObject:
   m_ObjectHideFlags: 0
