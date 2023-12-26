@@ -1,9 +1,11 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Bomb : MonoBehaviour
 {
-    [SerializeField] private float _timerBomb;
+    [SerializeField] private double _timerBomb;
+    [SerializeField] private Text _timerText;
     [SerializeField] private GameObject _effectExplosion;
     [SerializeField] private GameObject _flickerObj;
     private bool isDestroyBomb = false;
@@ -12,9 +14,10 @@ public class Bomb : MonoBehaviour
     public delegate void BombCallback();
     public static BombCallback bombActive;
 
-
+    private DateTime _timer;
     private void Start()
     {
+        _timer = DateTime.Now.AddSeconds(_timerBomb);
         isActiveBomb = true;
         _flickerObj.SetActive(true);
     }
@@ -22,10 +25,10 @@ public class Bomb : MonoBehaviour
     {
         if (isActiveBomb && !isDestroyBomb)
         {
-            _timerBomb -= Time.deltaTime;
-            if (_timerBomb < 0)
+            TimeSpan delta = _timer - DateTime.Now;
+            _timerText.text = str(delta);
+            if (delta.TotalSeconds < 0)
             {
-                _timerBomb = 0;
                 isDestroyBomb = true;
                 Explosion();
                 bombActive();
@@ -40,5 +43,10 @@ public class Bomb : MonoBehaviour
         GameObject explosion = Instantiate(_effectExplosion, transform.position, Quaternion.identity) as GameObject;
         Destroy(explosion, 2f);
         Destroy(this.gameObject, 0.1f);
+    }
+
+    private string str(TimeSpan t)
+    {
+        return t.Minutes + ":" + t.Seconds;
     }
 }
