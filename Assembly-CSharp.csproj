@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\RecyclableScrollRect.cs" />
     <Compile Include="Assets\Scripts\ContainerPositions.cs" />
+    <Compile Include="Assets\Scripts\Bomb.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\PromptYG.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\Demo\DemoElementSwayParent.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\ListView\ListViewItem.cs" />
@@ -73,8 +74,11 @@
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\UI Manager\UIManagerSwitch.cs" />
     <Compile Include="Assets\Scripts\Enemy\ObjectStateInvisible.cs" />
     <Compile Include="Assets\Scripts\Enemy\ManKnife.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\PowerUpManager.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\OpenAuthorizationDialog.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\Rendering\UIGradientEditor.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\CustomizablePowerUp.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\PowerUpRotation.cs" />
     <Compile Include="Assets\Brick Project Studio\Apartment Kit\Common\Scripts &amp; Animation\Slide\BRGlassDoor.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\UI Manager\UIManagerButtonEditor.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\UI Manager\UIManagerProgressBar.cs" />
@@ -152,6 +156,7 @@
     <Compile Include="Assets\Scripts\StateMachineEnemy\RangedAttackStateEnemy.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\Toggle\CustomToggle.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\UI Manager\UIManagerScrollbar.cs" />
+    <Compile Include="Assets\Scripts\ContainerBomb.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\UI Manager\UIManagerPieChart.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\LanguageExample.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\Slider\SliderManager.cs" />
@@ -183,6 +188,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\Language Translation\UtilsLang.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\Context Menu\ContextMenuContent.cs" />
     <Compile Include="Assets\Scripts\Bullet\ObjectPoolController.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\ScaleParticles.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\UI Manager\UIManagerProgressBarLoop.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\Demo\InputSystemChecker.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ImageLoadYG.cs" />
@@ -206,11 +212,13 @@
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\UI Manager\UIManagerHSelector.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\Context Menu\ContextMenuManager.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\Charts\PieChart.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\Utility\Singleton.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\UI Manager\UIManagerDropdownItem.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\Layout Group\RadialLayoutGroupEditor.cs" />
     <Compile Include="Assets\Scripts\BulletTrigger.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\GraphicSettingsYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboard\LeaderboardYG.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\TakeablePowerUp.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\UI Manager\UIManagerSliderEditor.cs" />
     <Compile Include="Assets\Damian Gonzalez\dg_simpleCamFollow\Scripts\dg_simpleCamFollow.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\UI Manager\UIManagerInputField.cs" />

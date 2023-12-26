@@ -8,11 +8,14 @@ public class CommandController : MonoBehaviour
     [SerializeField] private LayerMask _layerMask;
 
     [SerializeField] private List<GameObject> _hostagesObj = new List<GameObject>();
+    [SerializeField] private List<GameObject> _bombObj = new List<GameObject>();
     private ContainerHostage _containerHostage;
+    private ContainerBomb _containerBomb;
 
-    public void Initialize(ContainerHostage containerHostage)
+    public void Initialize(ContainerHostage containerHostage, ContainerBomb containerBomb)
     {
         _containerHostage = containerHostage;
+        _containerBomb = containerBomb;
     }
     private void Start()
     {
@@ -20,12 +23,22 @@ public class CommandController : MonoBehaviour
         //{
         //    _hostagesObj.Add(_containerHostage.listHostage[i]);
         //}
+
+        for (int i = 0; i < _containerBomb.listBomb.Count; i++)
+        {
+            _bombObj.Add(_containerBomb.listBomb[i]);
+        }
+
     }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
             CallHostage();
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            CheckBomb();
         }
     }
 
@@ -36,6 +49,17 @@ public class CommandController : MonoBehaviour
             if (Vector3.Distance(transform.position, _hostagesObj[i].transform.position) < _commandDistance)
             {
                 _hostagesObj[i].GetComponent<Hostage>().isFollow = true;
+            }
+        }
+    }
+
+    public void CheckBomb()
+    {
+        for (int i = 0; i < _bombObj.Count; i++)
+        {
+            if (Vector3.Distance(transform.position, _bombObj[i].transform.position) < _commandDistance)
+            {
+                _bombObj[i].GetComponent<Bomb>().isActiveBomb = false;
             }
         }
     }

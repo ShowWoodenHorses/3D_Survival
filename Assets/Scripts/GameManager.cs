@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ObjectPoolController _poolController;
     [SerializeField] private PoolEffectShoot _poolEffectShoot;
     [SerializeField] private ContainerHostage _containerHostage;
+    [SerializeField] private ContainerBomb _containerBomb;
 
     //Enemy
     [SerializeField] private GameObject _enemyKnife;
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        _playerTransform.GetComponent<CommandController>().Initialize(_containerHostage);
+        _playerTransform.GetComponent<CommandController>().Initialize(_containerHostage, _containerBomb);
 
         for (int i = 0; i < positionsEnemyKnife.Count; i++)
         {

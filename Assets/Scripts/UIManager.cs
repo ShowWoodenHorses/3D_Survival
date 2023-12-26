@@ -28,6 +28,7 @@ public class UIManager : MonoBehaviour
         EnemyController.enemyDie += AddEnemy;
         Hostage.hostageDie += GameOver;
         PlayerController.playerDie += GameOver;
+        Bomb.bombActive += GameOver;
     }
 
     private void OnDisable()
@@ -36,6 +37,7 @@ public class UIManager : MonoBehaviour
         EnemyController.enemyDie -= AddEnemy;
         Hostage.hostageDie -= GameOver;
         PlayerController.playerDie -= GameOver;
+        Bomb.bombActive -= GameOver;
     }
     private void Start()
     {
