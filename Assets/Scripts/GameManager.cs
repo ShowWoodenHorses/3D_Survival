@@ -24,14 +24,17 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        _countBomb = _containerBomb.listBomb.Count;
+        if (_containerBomb != null)
+        {
+            _countBomb = _containerBomb.listBomb.Count;
+        }
         _playerTransform.GetComponent<CommandController>().Initialize(_containerHostage, _containerBomb);
 
         for (int i = 0; i < positionsEnemyKnife.Count; i++)
         {
             ManKnife manKnife = _enemyKnife.GetComponent<ManKnife>();
             manKnife?.Initialize(_playerTransform, _containerPositionsForPatrul);
-            Instantiate(_enemyKnife, positionsEnemyKnife[i].position, Quaternion.identity);
+            Instantiate(_enemyKnife, positionsEnemyKnife[i].position, positionsEnemyKnife[i].transform.rotation);
         }
 
         for (int i = 0; i < positionsEnemyGun.Count; i++)
@@ -40,12 +43,14 @@ public class GameManager : MonoBehaviour
             manGun?.Initialize(_playerTransform, _poolController, _poolEffectShoot);
             Instantiate(_enemyGun, positionsEnemyGun[i].position, Quaternion.identity);
         }
-
-        for (int i = 0; i < _countBomb; i++)
+        if (_countBomb != 0)
         {
-            int randomIndex = Random.Range(0, positionsBomb.Count);
-            _containerBomb.listBomb[i].transform.position = positionsBomb[randomIndex].position;
-            positionsBomb.Remove(positionsBomb[randomIndex]);
+            for (int i = 0; i < _countBomb; i++)
+            {
+                int randomIndex = Random.Range(0, positionsBomb.Count);
+                _containerBomb.listBomb[i].transform.position = positionsBomb[randomIndex].position;
+                positionsBomb.Remove(positionsBomb[randomIndex]);
+            }
         }
 
         for (int i = 0; i < _containerHostage.listHostage.Count; i++)

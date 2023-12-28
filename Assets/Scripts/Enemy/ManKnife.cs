@@ -4,12 +4,12 @@ using UnityEngine.AI;
 
 public class ManKnife : EnemyController
 {
-    [SerializeField] private ContainerPositions _containerPositions;
+    [SerializeField] private protected ContainerPositions _containerPositions;
 
-    private StateMachineEnemy _SM;
-    private RunStateEnemy _runStateEnemy;
-    private PatrulStateEnemy _patrulStateEnemy;
-    private MeleeAttackStateEnemy _meleeAttackStateEnemy;
+    private protected StateMachineEnemy _SM;
+    private protected RunStateEnemy _runStateEnemy;
+    private protected PatrulStateEnemy _patrulStateEnemy;
+    private protected MeleeAttackStateEnemy _meleeAttackStateEnemy;
 
     public override void Awake()
     {
@@ -33,7 +33,7 @@ public class ManKnife : EnemyController
         _patrulStateEnemy.Init();
     }
 
-    public void Update()
+    public virtual void Update()
     {
         _SM.CurreantStateEnemy.Update();
         float distanceToPlayer = Vector3.Distance(transform.position, _playerPos.position);

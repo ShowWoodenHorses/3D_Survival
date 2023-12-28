@@ -72,9 +72,9 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\ConsumePurchasesYG.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\SaverTest.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\UI Manager\UIManagerSwitch.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\PowerUpManager.cs" />
     <Compile Include="Assets\Scripts\Enemy\ObjectStateInvisible.cs" />
     <Compile Include="Assets\Scripts\Enemy\ManKnife.cs" />
-    <Compile Include="Assets\PowerUp\Scripts\PowerUpManager.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\OpenAuthorizationDialog.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\Rendering\UIGradientEditor.cs" />
     <Compile Include="Assets\PowerUp\Scripts\CustomizablePowerUp.cs" />
@@ -220,6 +220,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboard\LeaderboardYG.cs" />
     <Compile Include="Assets\PowerUp\Scripts\TakeablePowerUp.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\UI Manager\UIManagerSliderEditor.cs" />
+    <Compile Include="Assets\Scripts\Enemy\ManKnifeSeat.cs" />
     <Compile Include="Assets\Damian Gonzalez\dg_simpleCamFollow\Scripts\dg_simpleCamFollow.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\UI Manager\UIManagerInputField.cs" />
     <Compile Include="Assets\Brick Project Studio\_BPS Basic Assets\Common\Scripts and Animations\First Person Player\PlayerMovement.cs" />
@@ -240,6 +241,7 @@
     <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\Recycling System\HorizontalRecyclingSystem.cs" />
     <Compile Include="Assets\Brick Project Studio\Apartment Kit\Common\Scripts &amp; Animation\OvenOpen\OvenFlip.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\Tooltip\TooltipManager.cs" />
+    <Compile Include="Assets\Scripts\StateMachineEnemy\SeatEnemyState.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\NewResultLBExample.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
     <Compile Include="Assets\Import\Modern UI Pack\Scripts\Slider\SliderInput.cs" />

@@ -8,6 +8,8 @@ public class Hostage : MonoBehaviour, IDamagable
 {
     public bool isFollow = false;
 
+    [SerializeField] private bool _isSeat;
+
     [SerializeField] private protected Rigidbody _rb;
     [SerializeField] private protected Collider _collider;
     [SerializeField] private protected Transform _playerPos;
@@ -55,13 +57,26 @@ public class Hostage : MonoBehaviour, IDamagable
     private void Start()
     {
         _agent.isStopped = true;
+        if (_isSeat == true)
+        {
+            _anim.SetBool("Seat", true);
+        }
     }
 
     private void Update()
     {
-        _anim.SetFloat("speed", _agent.velocity.magnitude);
+        if (!_isSeat)
+        {
+            _anim.SetFloat("speed", _agent.velocity.magnitude);
+            _anim.SetBool("Seat", false);
+        }
+        else if(_isSeat == true)
+        {
+            _anim.SetBool("Seat", true);
+        }
         if (isFollow == true)
         {
+            _isSeat = false;
             _agent.isStopped = false;
             _agent.destination = _playerPos.position;
         }
