@@ -52,7 +52,8 @@ MonoBehaviour:
   _timerText: {fileID: 4522082598923907771}
   _effectExplosion: {fileID: 7890097961827564432, guid: c3c8226c26b2f024388e0a3e22be54f2, type: 3}
   _flickerObj: {fileID: 7543246213986846223}
-  isActiveBomb: 0
+  _timerObj: {fileID: 1946617253571621098}
+  isActiveBomb: 1
 --- !u!65 &2174778975659150853
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -242,7 +243,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 122834da39c9ff3428f57bd1a15782c4, type: 3}
+    m_Font: {fileID: 12800000, guid: 82cc91725ab2f0c41920038a250d768b, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0

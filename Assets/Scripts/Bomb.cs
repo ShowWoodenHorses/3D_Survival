@@ -8,6 +8,7 @@ public class Bomb : MonoBehaviour
     [SerializeField] private Text _timerText;
     [SerializeField] private GameObject _effectExplosion;
     [SerializeField] private GameObject _flickerObj;
+    [SerializeField] private GameObject _timerObj;
     private bool isDestroyBomb = false;
     public bool isActiveBomb;
 
@@ -17,6 +18,7 @@ public class Bomb : MonoBehaviour
     private DateTime _timer;
     private void Start()
     {
+        _timerObj.SetActive(true);
         _timer = DateTime.Now.AddSeconds(_timerBomb);
         isActiveBomb = true;
         _flickerObj.SetActive(true);
@@ -35,7 +37,10 @@ public class Bomb : MonoBehaviour
             }
         }
         else if (!isActiveBomb)
+        {
+            _timerObj.SetActive(false);
             _flickerObj.SetActive(false);
+        }
     }
 
     private void Explosion()

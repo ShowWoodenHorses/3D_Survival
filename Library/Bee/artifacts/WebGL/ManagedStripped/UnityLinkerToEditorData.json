@@ -8,7 +8,8 @@
             "name": "NavMeshAgent",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -17,7 +18,8 @@
             "name": "NavMeshData",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -25,7 +27,8 @@
           {
             "name": "NavMeshObstacle",
             "scenes": [
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -41,6 +44,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 1,
@@ -55,7 +59,8 @@
             "name": "AnimationClip",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -64,7 +69,8 @@
             "name": "Animator",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -73,7 +79,8 @@
             "name": "AnimatorController",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -88,7 +95,8 @@
             "name": "Avatar",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -115,6 +123,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -131,6 +140,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -140,6 +150,12 @@
             "name": "AudioManager",
             "scenes": [],
             "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "AudioSource",
+            "scenes": [],
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -170,6 +186,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -192,6 +209,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -214,6 +232,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 1,
@@ -230,6 +249,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -258,6 +278,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 1,
@@ -267,7 +288,8 @@
             "name": "Light",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -275,7 +297,8 @@
           {
             "name": "LightProbeGroup",
             "scenes": [
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -283,7 +306,8 @@
           {
             "name": "LightProbes",
             "scenes": [
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -291,7 +315,8 @@
           {
             "name": "LightingSettings",
             "scenes": [
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -301,6 +326,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -317,6 +343,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -326,7 +353,9 @@
             "name": "Mesh",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -335,7 +364,9 @@
             "name": "MeshFilter",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -344,7 +375,9 @@
             "name": "MeshRenderer",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -354,6 +387,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -370,6 +404,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 1,
@@ -380,6 +415,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 1,
@@ -414,6 +450,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -430,6 +467,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -464,6 +502,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -479,7 +518,8 @@
             "name": "SkinnedMeshRenderer",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -495,6 +535,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -739,7 +780,8 @@
             "name": "ParticleSystem",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -748,7 +790,8 @@
             "name": "ParticleSystemRenderer",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -762,7 +805,8 @@
             "name": "BoxCollider",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -771,7 +815,8 @@
             "name": "CapsuleCollider",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -792,7 +837,8 @@
             "name": "MeshCollider",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -807,7 +853,8 @@
             "name": "Rigidbody",
             "scenes": [
               "Assets/Scenes/GameScene.unity",
-              "Assets/Scenes/Level_1.unity"
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1003,6 +1050,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -1048,6 +1096,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -1064,6 +1113,7 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
