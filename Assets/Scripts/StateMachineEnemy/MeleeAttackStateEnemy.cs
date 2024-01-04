@@ -30,16 +30,16 @@ public class MeleeAttackStateEnemy : StateEnemy
     {
         if (!_isCooldownAttack)
         {
-            _manKnife.StartCoroutine(Shoot());
             _anim.SetTrigger("Attack");
+            _manKnife.StartCoroutine(Shoot());
         }
     }
 
     private IEnumerator Shoot()
     {
         _isCooldownAttack = true;
-        yield return new WaitForSeconds(_cooldownTime);
         _playerPos.GetComponent<IDamagable>().TakeDamage(_damage);
+        yield return new WaitForSeconds(_cooldownTime);
         _isCooldownAttack = false;
     }
 }

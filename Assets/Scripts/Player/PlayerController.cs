@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour, IDamagable
         Vector3 objectPosition = _mainCamera.WorldToScreenPoint(t.position);
         Vector3 direction = mousePosition - objectPosition;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        if (Vector3.Distance(_bulletPos.position, direction) > 100f)
+        if (Vector3.Distance(_bulletPos.position, direction) > 75f)
         {
             transform.rotation = Quaternion.Euler(0f, -angle + offset, 0f);
         }
