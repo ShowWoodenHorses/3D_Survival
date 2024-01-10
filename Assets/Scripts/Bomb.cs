@@ -10,10 +10,12 @@ public class Bomb : MonoBehaviour
     [SerializeField] private GameObject _flickerObj;
     [SerializeField] private GameObject _timerObj;
     private bool isDestroyBomb = false;
+    private bool _bombNeutralize = false;
     public bool isActiveBomb;
 
     public delegate void BombCallback();
     public static BombCallback bombActive;
+    public static BombCallback bombNeutralize;
 
     private DateTime _timer;
     private void Start()
@@ -40,6 +42,11 @@ public class Bomb : MonoBehaviour
         {
             _timerObj.SetActive(false);
             _flickerObj.SetActive(false);
+            if (!_bombNeutralize)
+            {
+                bombNeutralize();
+                _bombNeutralize = true;
+            }
         }
     }
 

@@ -393,6 +393,7 @@
 "Assets/Scripts/ContainerPositions.cs"
 "Assets/Scripts/Door.cs"
 "Assets/Scripts/DoorTrigger.cs"
+"Assets/Scripts/Enemy/AirPlaneMovement.cs"
 "Assets/Scripts/Enemy/BaseLogicEnemy.cs"
 "Assets/Scripts/Enemy/EnemyController.cs"
 "Assets/Scripts/Enemy/Hostage.cs"

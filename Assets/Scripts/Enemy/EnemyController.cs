@@ -64,7 +64,6 @@ public abstract class EnemyController : MonoBehaviour, IDamagable
 
     public void TakeDamage(int damage)
     {
-        Debug.Log(damage);
         Health -= damage;
         GameObject blood = Instantiate(_bloodPrefab, transform.position, transform.rotation) as GameObject;
         Destroy(blood?.gameObject, 2f);

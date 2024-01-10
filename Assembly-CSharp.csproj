@@ -164,6 +164,7 @@
     <Compile Include="Assets\Brick Project Studio\Apartment Kit\Common\Scripts &amp; Animation\OvenOpen\OvenFlip.cs" />
     <Compile Include="Assets\Scripts\StateMachineEnemy\SeatEnemyState.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\NewResultLBExample.cs" />
+    <Compile Include="Assets\Scripts\Enemy\AirPlaneMovement.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\CustomRBT\BannerYG.cs" />
     <Compile Include="Assets\Scripts\Bullet\PoolEffectShoot.cs" />
