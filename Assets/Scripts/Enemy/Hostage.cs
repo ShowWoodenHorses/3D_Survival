@@ -90,6 +90,8 @@ public class Hostage : MonoBehaviour, IDamagable
             isFollow = false;
             hostageZone();
             _collider.enabled = false;
+            Destroy(this.gameObject, 2f);
+            _playerPos.GetComponent<CommandController>()._hostagesObj.Remove(this.gameObject);
         }
     }
 

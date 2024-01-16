@@ -75,6 +75,7 @@
     <Compile Include="Assets\Brick Project Studio\Apartment Kit\Common\Scripts &amp; Animation\Slide\BRGlassDoor.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\YandexMetrica\JsonUtils.cs" />
     <Compile Include="Assets\Brick Project Studio\_BPS Basic Assets\Common\Scripts and Animations\Doors\opencloseDoor1.cs" />
+    <Compile Include="Assets\Scripts\ArrowDirection.cs" />
     <Compile Include="Assets\YandexGame\DebuggingMode\Scripts\DebuggingModeYG.cs" />
     <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\Interfaces\IRecyclableScrollRectDataSource.cs" />
     <Compile Include="Assets\Scripts\Player\CommandController.cs" />
@@ -143,6 +144,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\UtilsPayments.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\SwitchSceneTest.cs" />
+    <Compile Include="Assets\Scripts\Player\RandomManager.cs" />
     <Compile Include="Assets\PowerUp\Scripts\Utility\Singleton.cs" />
     <Compile Include="Assets\Scripts\BulletTrigger.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\GraphicSettingsYG.cs" />

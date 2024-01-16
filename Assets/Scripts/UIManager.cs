@@ -48,8 +48,10 @@ public class UIManager : MonoBehaviour
     }
     private void Start()
     {
-        countHostageForWin = containerHostage.listHostage.Count;
-        countStartEnemy = gameManager.positionsEnemyGun.Count + gameManager.positionsEnemyKnife.Count;
+        if (containerHostage != null)
+            countHostageForWin = containerHostage.listHostage.Count;
+        if (gameManager != null)
+            countStartEnemy = gameManager.positionsEnemyGun.Count + gameManager.positionsEnemyKnife.Count;
         if (containerBomb != null)
         {
             countStartBomb = containerBomb.listBomb.Count;
@@ -61,10 +63,10 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        if (countHostageFree == countHostageForWin && countKillEnemy == countStartEnemy)
-        {
-            GameWin();
-        }
+        //if (countHostageFree == countHostageForWin && countKillEnemy == countStartEnemy)
+        //{
+        //    GameWin();
+        //}
     }
 
     private void AddHostage()

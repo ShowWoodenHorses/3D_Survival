@@ -8,8 +8,8 @@ public class CommandController : MonoBehaviour
     [SerializeField] private float _commandDistanceBomb;
     [SerializeField] private LayerMask _layerMask;
 
-    [SerializeField] private List<GameObject> _hostagesObj = new List<GameObject>();
-    [SerializeField] private List<GameObject> _bombObj = new List<GameObject>();
+    public List<GameObject> _hostagesObj = new List<GameObject>();
+    public List<GameObject> _bombsObj = new List<GameObject>();
     private ContainerHostage _containerHostage;
     private ContainerBomb _containerBomb;
 
@@ -28,10 +28,19 @@ public class CommandController : MonoBehaviour
         {
             for (int i = 0; i < _containerBomb.listBomb.Count; i++)
             {
-                _bombObj.Add(_containerBomb.listBomb[i]);
+                _bombsObj.Add(_containerBomb.listBomb[i]);
             }
         }
 
+    }
+
+    public void AddBombToPlayer(GameObject obj)
+    {
+        _bombsObj.Add(obj);
+    }
+    public void AddHostageToPlayer(GameObject obj)
+    {
+        _hostagesObj.Add(obj);
     }
     private void Update()
     {
@@ -58,11 +67,12 @@ public class CommandController : MonoBehaviour
 
     public void CheckBomb()
     {
-        for (int i = 0; i < _bombObj.Count; i++)
+        for (int i = 0; i < _bombsObj.Count; i++)
         {
-            if (Vector3.Distance(transform.position, _bombObj[i].transform.position) < _commandDistanceBomb)
+            if (Vector3.Distance(transform.position, _bombsObj[i].transform.position) < _commandDistanceBomb)
             {
-                _bombObj[i].GetComponent<Bomb>().isActiveBomb = false;
+                _bombsObj[i].GetComponent<Bomb>().isActiveBomb = false;
+                _bombsObj.Remove(_bombsObj[i]);
             }
         }
     }

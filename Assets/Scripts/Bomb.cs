@@ -18,6 +18,8 @@ public class Bomb : MonoBehaviour
     public static BombCallback bombNeutralize;
 
     private DateTime _timer;
+
+    private Transform _playerPos;
     private void Start()
     {
         _timerObj.SetActive(true);
@@ -46,6 +48,7 @@ public class Bomb : MonoBehaviour
             {
                 bombNeutralize();
                 _bombNeutralize = true;
+                Destroy(this.gameObject, 2f);
             }
         }
     }
