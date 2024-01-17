@@ -5,7 +5,9 @@ using UnityEngine;
 public class GunPlayer : MonoBehaviour
 {
     [SerializeField] private List<GameObject> guns = new List<GameObject>();
-    [SerializeField] private Transform _bulletPos;
+    private Transform _bulletPos;
+    [SerializeField] private Transform _bulletPosStay;
+    [SerializeField] private Transform _bulletPosRun;
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private float _speedBullet;
 
@@ -22,6 +24,7 @@ public class GunPlayer : MonoBehaviour
     private Animator _anim;
     private void Awake()
     {
+        _bulletPos = _bulletPosStay;
         for (int i = 0; i < guns.Count; i++)
         {
             guns[i].gameObject.SetActive(false);
@@ -36,7 +39,7 @@ public class GunPlayer : MonoBehaviour
     {
         //костыль, чтоб если оружие в стене, то нельзя стрелять
         _isCheckTriggerWeaponInWall = _bulletPos.GetComponent<CheckTriggerWeaponAndObstacle>().isWeaponInObstacle;
-        if (Input.GetMouseButtonDown(0) && _isCooldown == false && _isCheckTriggerWeaponInWall)
+        if (Input.GetMouseButton(0) && _isCooldown == false && _isCheckTriggerWeaponInWall)
         {
             Shoot();
         }
@@ -49,10 +52,12 @@ public class GunPlayer : MonoBehaviour
         Vector3 direction = new Vector3(-v, 0, h);
         if (direction.magnitude > Mathf.Abs(0.05f))
         {
-            _anim.SetTrigger("ShootRun");
+            _bulletPos = _bulletPosRun;
+            //_anim.SetTrigger("ShootRun");
         }
         else
         {
+            _bulletPos = _bulletPosStay;
             _anim.SetTrigger("ShootStay");
         }
         StartCoroutine(ShootCooldown());

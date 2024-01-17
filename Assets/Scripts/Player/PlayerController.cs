@@ -18,7 +18,8 @@ public class PlayerController : MonoBehaviour, IDamagable
     [SerializeField] private LayerMask _layerMask;
 
     [SerializeField] private Transform _bulletPos;
-    [SerializeField] private float _offset;
+    [SerializeField] private float _offsetStay;
+    [SerializeField] private float _offsetRun;
 
     private bool _isPlayerDeath = false;
 
@@ -104,11 +105,11 @@ public class PlayerController : MonoBehaviour, IDamagable
         _rb.angularVelocity = Vector3.zero;
         if (moveDir.magnitude > 0.02f)
         {
-            RotatePlayer(this.transform, 30f);
+            RotatePlayer(this.transform, _offsetStay);
         }
         else
         {
-            RotatePlayer(_bulletPos, 51.5f);
+            RotatePlayer(_bulletPos, _offsetRun);
         }
         
     }

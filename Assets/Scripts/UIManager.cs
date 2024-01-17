@@ -16,6 +16,8 @@ public class UIManager : MonoBehaviour
     public int countStartBomb;
     public int countNeutralizeBomb;
 
+    [SerializeField] private bool _isRandomGame;
+
     //Text
     [SerializeField] Text countHostageText;
     [SerializeField] Text countHostageFreeText;
@@ -63,10 +65,11 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        //if (countHostageFree == countHostageForWin && countKillEnemy == countStartEnemy)
-        //{
-        //    GameWin();
-        //}
+        if (countHostageFree == countHostageForWin && countKillEnemy == countStartEnemy)
+        {
+            if (!_isRandomGame)
+                GameWin();
+        }
     }
 
     private void AddHostage()

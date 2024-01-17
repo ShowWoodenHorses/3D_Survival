@@ -1952,7 +1952,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.17406106
+  m_Radius: 0.4
   m_Height: 1.7179651
   m_Direction: 1
   m_Center: {x: -0.00000023841858, y: 0.8578553, z: 0}
@@ -2003,7 +2003,7 @@ MonoBehaviour:
   _anim: {fileID: 0}
   _agent: {fileID: 0}
   _startHealth: 2
-  _positionsForPatrul: []
+  _health: 0
   _containerPositions: {fileID: 0}
 --- !u!114 &3069056388969530640
 MonoBehaviour:

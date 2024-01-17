@@ -18,7 +18,6 @@ public class Door : MonoBehaviour
     void Start()
     {
         _doorTransform = gameObject.transform.GetChild(0);
-        _obstacleNavMesh.enabled = true;
     }
 
     // Update is called once per frame
@@ -28,6 +27,13 @@ public class Door : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<DoorTrigger>())
+        {
+            DoorOpen();
+        }
+    }
+    private void OnTriggerStay(Collider other)
     {
         if (other.GetComponent<DoorTrigger>())
         {
@@ -46,12 +52,10 @@ public class Door : MonoBehaviour
     void DoorOpen()
     {
         _doorTransform.rotation = Quaternion.Euler(transform.localRotation.x, _angle, transform.localRotation.z);
-        _obstacleNavMesh.enabled = false;
     }
 
     void DoorClose()
     {
         _doorTransform.rotation = Quaternion.Euler(transform.localRotation.x, _startAngle, transform.localRotation.z);
-        _obstacleNavMesh.enabled = true;
     }
 }

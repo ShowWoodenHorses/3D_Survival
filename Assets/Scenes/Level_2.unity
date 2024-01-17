@@ -3656,8 +3656,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 219467056}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 30.760393}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3666,7 +3666,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 20.935787, y: -50.00006}
+  m_AnchoredPosition: {x: 50, y: -50}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &219467058
@@ -21056,6 +21056,73 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1315181077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1315181078}
+  - component: {fileID: 1315181080}
+  - component: {fileID: 1315181079}
+  m_Layer: 7
+  m_Name: BulletTransform (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1315181078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315181077}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.41469333, z: -0, w: 0.9099612}
+  m_LocalPosition: {x: -0.35499954, y: 1.538, z: 0.45700073}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450653642720263}
+  m_LocalEulerAnglesHint: {x: 0, y: -49, z: 0}
+--- !u!114 &1315181079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315181077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fc7048c67265e44bc6f84bc3f529d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWeaponInObstacle: 0
+--- !u!65 &1315181080
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315181077}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0686181, y: 0.1281806, z: 0.9774959}
+  m_Center: {x: 0.012679199, y: -0.018626623, z: -0.16755469}
 --- !u!43 &1315533243
 Mesh:
   m_ObjectHideFlags: 0
@@ -24909,6 +24976,73 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1563053395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1563053396}
+  - component: {fileID: 1563053398}
+  - component: {fileID: 1563053397}
+  m_Layer: 7
+  m_Name: BulletTransformRun (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1563053396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563053395}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.258819, z: -0, w: 0.9659259}
+  m_LocalPosition: {x: -0.18600082, y: 1.538, z: 0.65999985}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450653642720263}
+  m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
+--- !u!114 &1563053397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563053395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fc7048c67265e44bc6f84bc3f529d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWeaponInObstacle: 0
+--- !u!65 &1563053398
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563053395}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0686181, y: 0.1281806, z: 0.9774959}
+  m_Center: {x: 0.012679199, y: -0.018626623, z: -0.16755469}
 --- !u!43 &1565185100
 Mesh:
   m_ObjectHideFlags: 0
@@ -28674,7 +28808,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _bulletPos: {fileID: 37830809}
-  _offset: 50
+  _offsetStay: 30.5
+  _offsetRun: 50
   _startHealth: 2
 --- !u!136 &1774170311
 CapsuleCollider:
@@ -28739,7 +28874,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   guns: []
-  _bulletPos: {fileID: 37830809}
+  _bulletPosStay: {fileID: 1315181078}
+  _bulletPosRun: {fileID: 1563053396}
   _bulletPrefab: {fileID: 4092872357349286730, guid: 5269dd52fdc50ea429c6b6a65cc1161e, type: 3}
   _speedBullet: 1000
   _cooldown: 0.1
@@ -28766,7 +28902,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   _hostagesObj: []
-  _bombObj: []
+  _bombsObj: []
 --- !u!1001 &1783887106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31497,6 +31633,7 @@ MonoBehaviour:
   countKillEnemy: 0
   countStartBomb: 0
   countNeutralizeBomb: 0
+  _isRandomGame: 0
   countHostageText: {fileID: 1919066202}
   countHostageFreeText: {fileID: 44385650}
   countStartEnemyText: {fileID: 2046877513}
@@ -33779,6 +33916,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1563053396}
+  - {fileID: 1315181078}
   - {fileID: 3139378901565405275}
   - {fileID: 5465940246440600723}
   - {fileID: 2127617865}

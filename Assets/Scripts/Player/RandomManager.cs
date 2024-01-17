@@ -21,7 +21,7 @@ public class RandomManager : MonoBehaviour
     [SerializeField] private PoolEffectShoot _poolEffectShoot;
 
     public float timer = 10f;
-    public float timerEnemy = 5f;
+    public float timerEnemy = 2f;
     private float TimerSpawnBombAndHostage
     {
         get
@@ -61,7 +61,7 @@ public class RandomManager : MonoBehaviour
         timerEnemy -= Time.deltaTime;
         if (timerEnemy < 0)
         {
-            timerEnemy = 5f;
+            timerEnemy = 2f;
             SpawnEnemy();
         }
     }

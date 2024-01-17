@@ -38,4 +38,16 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Level_2");
         Time.timeScale = 1.0f;
     }
+
+    public void StartLevelThree()
+    {
+        SceneManager.LoadScene("Level_3");
+        Time.timeScale = 1.0f;
+    }
+
+    public void StartLevelSurvival()
+    {
+        SceneManager.LoadScene("Level_Survival");
+        Time.timeScale = 1.0f;
+    }
 }

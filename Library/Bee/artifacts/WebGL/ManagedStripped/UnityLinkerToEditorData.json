@@ -9,7 +9,9 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -19,7 +21,9 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -28,7 +32,9 @@
             "name": "NavMeshObstacle",
             "scenes": [
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -45,6 +51,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 1,
@@ -60,7 +68,9 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -70,7 +80,9 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -80,7 +92,9 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -96,7 +110,9 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -124,6 +140,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -141,6 +159,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -150,6 +170,18 @@
             "name": "AudioManager",
             "scenes": [],
             "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "AudioMixer",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "AudioMixerGroup",
+            "scenes": [],
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -187,6 +219,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -210,6 +244,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -233,6 +269,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 1,
@@ -250,6 +288,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -279,6 +319,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 1,
@@ -289,7 +331,9 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -298,7 +342,9 @@
             "name": "LightProbeGroup",
             "scenes": [
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -307,7 +353,9 @@
             "name": "LightProbes",
             "scenes": [
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -316,7 +364,9 @@
             "name": "LightingSettings",
             "scenes": [
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -327,6 +377,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -344,6 +396,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -355,6 +409,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -366,6 +422,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -377,6 +435,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -388,6 +448,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -405,6 +467,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 1,
@@ -416,6 +480,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 1,
@@ -451,6 +517,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -468,6 +536,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -503,6 +573,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -519,7 +591,9 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -536,6 +610,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -668,6 +744,18 @@
             "icon": "package/com.unity.modules.tls"
           },
           {
+            "name": "Required by Terrain Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.terrain"
+          },
+          {
+            "name": "Required by TerrainPhysics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.terrainphysics"
+          },
+          {
             "name": "Required by TextCoreFontEngine Module",
             "scenes": [],
             "dependencyType": 2,
@@ -781,7 +869,9 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -791,7 +881,9 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -806,7 +898,9 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -816,7 +910,9 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -838,7 +934,17 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "PhysicMaterial",
+            "scenes": [
+              "Assets/Scenes/Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -854,10 +960,29 @@
             "scenes": [
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
-              "Assets/Scenes/Level_2.unity"
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
             ],
             "dependencyType": 0,
             "icon": null
+          },
+          {
+            "name": "SphereCollider",
+            "scenes": [
+              "Assets/Scenes/Level_1.unity",
+              "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Required by TerrainPhysics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.terrainphysics"
           }
         ]
       },
@@ -948,6 +1073,18 @@
             "icon": "package/com.unity.modules.tls"
           },
           {
+            "name": "Required by Terrain Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.terrain"
+          },
+          {
+            "name": "Required by TerrainPhysics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.terrainphysics"
+          },
+          {
             "name": "Required by TextCoreFontEngine Module",
             "scenes": [],
             "dependencyType": 2,
@@ -1009,6 +1146,54 @@
         ]
       },
       {
+        "name": "Terrain",
+        "dependencies": [
+          {
+            "name": "Terrain",
+            "scenes": [
+              "Assets/Scenes/Level_3.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "TerrainData",
+            "scenes": [
+              "Assets/Scenes/Level_3.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "TerrainLayer",
+            "scenes": [
+              "Assets/Scenes/Level_3.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Required by TerrainPhysics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.terrainphysics"
+          }
+        ]
+      },
+      {
+        "name": "TerrainPhysics",
+        "dependencies": [
+          {
+            "name": "TerrainCollider",
+            "scenes": [
+              "Assets/Scenes/Level_3.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          }
+        ]
+      },
+      {
         "name": "TextCoreFontEngine",
         "dependencies": [
           {
@@ -1051,6 +1236,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -1097,6 +1284,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -1114,6 +1303,8 @@
               "Assets/Scenes/GameScene.unity",
               "Assets/Scenes/Level_1.unity",
               "Assets/Scenes/Level_2.unity",
+              "Assets/Scenes/Level_3.unity",
+              "Assets/Scenes/Level_Survival.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,

@@ -2322,7 +2322,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1733751722}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: StartLevelOne
+        m_MethodName: StartLevelThree
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2801,7 +2801,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1733751722}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: StartLevelOne
+        m_MethodName: StartLevelSurvival
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

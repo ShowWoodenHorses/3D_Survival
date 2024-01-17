@@ -26,12 +26,12 @@ public class GameManager : MonoBehaviour
     {
         if (_containerBomb != null)
             _countBomb = _containerBomb.listBomb.Count;
-        if (_containerHostage != null && _containerBomb != null)
-            _playerTransform.GetComponent<CommandController>().Initialize(_containerHostage, _containerBomb);
+        _playerTransform.GetComponent<CommandController>().Initialize(_containerHostage, _containerBomb);
 
         for (int i = 0; i < positionsEnemyKnife.Count; i++)
         {
             ManKnife manKnife = _enemyKnife.GetComponent<ManKnife>();
+            manKnife.GetComponent<EnemyController>().ChangeRadiusDetected(3f);
             manKnife?.Initialize(_playerTransform, _containerPositionsForPatrul);
             Instantiate(_enemyKnife, positionsEnemyKnife[i].position, positionsEnemyKnife[i].transform.rotation);
         }
@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < positionsEnemyGun.Count; i++)
         {
             ManGun manGun = _enemyGun.GetComponent<ManGun>();
+            manGun.GetComponent<EnemyController>().ChangeRadiusDetected(5f);
             manGun?.Initialize(_playerTransform, _poolController, _poolEffectShoot);
             Instantiate(_enemyGun, positionsEnemyGun[i].position, Quaternion.identity);
         }
