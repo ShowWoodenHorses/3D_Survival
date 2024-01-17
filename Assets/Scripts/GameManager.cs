@@ -25,10 +25,9 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         if (_containerBomb != null)
-        {
             _countBomb = _containerBomb.listBomb.Count;
-        }
-        _playerTransform.GetComponent<CommandController>().Initialize(_containerHostage, _containerBomb);
+        if (_containerHostage != null && _containerBomb != null)
+            _playerTransform.GetComponent<CommandController>().Initialize(_containerHostage, _containerBomb);
 
         for (int i = 0; i < positionsEnemyKnife.Count; i++)
         {

@@ -69,4 +69,9 @@ public abstract class EnemyController : MonoBehaviour, IDamagable
         Destroy(blood?.gameObject, 2f);
     }
 
+    public void ChangeRadiusDetected(float f)
+    {
+        _radiusDetected = f;
+    }
+
 }

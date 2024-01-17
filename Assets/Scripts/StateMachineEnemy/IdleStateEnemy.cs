@@ -37,7 +37,6 @@ public class IdleStateEnemy : StateEnemy
 
     public override void Update()
     {
-        Debug.Log("Update Idle");
         _anim.SetFloat("speed", _agent.velocity.magnitude);
     }
 }
