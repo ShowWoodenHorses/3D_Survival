@@ -415,6 +415,7 @@
 "Assets/Scripts/Player/GunPlayer.cs"
 "Assets/Scripts/Player/PlayerController.cs"
 "Assets/Scripts/Player/RandomManager.cs"
+"Assets/Scripts/Player/RotateTransformBullet.cs"
 "Assets/Scripts/Player/SetMaterialToInvisible.cs"
 "Assets/Scripts/StateMachineEnemy/DeathStateEnemy.cs"
 "Assets/Scripts/StateMachineEnemy/IdleStateEnemy.cs"
